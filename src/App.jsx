@@ -4,8 +4,8 @@ import Home from "./pages/Home";
 import Campaigns from "./pages/Campaigns";
 import About from "./pages/About";
 import Blog from "./pages/Blog";
-import Pages from "./pages/Pages";
-import Contact from "./pages/Contact";
+import Donation from "./pages/Donation";
+import SignUp from "./pages/Sign-up";
 import "./App.css";
 
 function App() {
@@ -27,10 +27,10 @@ function App() {
         return <About />;
       case "blog":
         return <Blog />;
-      case "pages":
-        return <Pages />;
       case "contact":
-        return <Contact />;
+        return <SignUp />;
+      case "donation":
+        return <Donation />;
       default:
         return <Home />;
     }
@@ -39,7 +39,9 @@ function App() {
   return (
     <div className="app">
       <HeroSection onNavigate={navigateTo} currentPage={currentPage} />
-      <div className="page-content-container"> {/* Added for clarity and potential styling */}
+      <div className="page-content-container">
+        {" "}
+        {/* Added for clarity and potential styling */}
         {renderPage()}
       </div>
     </div>

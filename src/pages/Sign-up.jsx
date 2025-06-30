@@ -1,7 +1,7 @@
 import React from "react";
 import "../PageStyles.css";
 
-const Contact = () => {
+const SignUp = () => {
   return (
     <div className="page-container">
       <div className="page-content">
@@ -147,4 +147,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default SignUp;

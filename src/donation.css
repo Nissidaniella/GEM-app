@@ -1,0 +1,216 @@
+/* Donation Page Styles */
+.donation-hero {
+  position: relative;
+  width: 100vw;
+  min-height: 420px;
+  background: url("/public/vite.svg") center/cover no-repeat; /* Replace with actual hero image */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.donation-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(24, 38, 54, 0.7);
+  z-index: 1;
+}
+.donation-hero-content {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  text-align: right;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 40px 0 0;
+  font-family: "Permanent Marker", cursive, Arial, sans-serif;
+}
+.donation-hero-content h1 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  margin: 0;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+}
+
+.donation-form-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: -120px;
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 3;
+}
+.donation-form-container {
+  background: #2d3a4a;
+  color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+  padding: 40px 36px 32px 36px;
+  min-width: 420px;
+  max-width: 480px;
+  width: 100%;
+}
+.form-section-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 18px;
+  margin-top: 0;
+  font-family: "Georgia", serif;
+}
+.form-row {
+  display: flex;
+  gap: 18px;
+}
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+.form-group label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #e6e6e6;
+  letter-spacing: 0.5px;
+}
+.form-group input,
+.form-group select {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #7e8fa3;
+  color: #fff;
+  font-size: 1rem;
+  padding: 7px 0 5px 0;
+  outline: none;
+  margin-bottom: 2px;
+  transition: border-color 0.2s;
+}
+.form-group input:focus,
+.form-group select:focus {
+  border-bottom: 2px solid #aee1c9;
+}
+.expiration-fields {
+  display: flex;
+  gap: 8px;
+}
+.donation-message {
+  margin: 24px 0 18px 0;
+  font-size: 1.08rem;
+  color: #fff;
+  font-weight: 500;
+}
+.form-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 18px;
+}
+.go-back-link {
+  color: #b7c7d6;
+  text-decoration: underline;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.process-payment-btn {
+  background: #aee1c9;
+  color: #2d3a4a;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 22px;
+  padding: 10px 36px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.process-payment-btn:hover {
+  background: #8fd6b7;
+}
+
+/* Footer Styles */
+.donation-footer {
+  background: #fff;
+  color: #2d3a4a;
+  padding: 48px 0 32px 0;
+  border-top: 1px solid #e6e6e6;
+  margin-top: 60px;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  flex-wrap: wrap;
+}
+.footer-col {
+  flex: 1;
+  min-width: 180px;
+  margin-right: 32px;
+}
+.footer-col:last-child {
+  margin-right: 0;
+}
+.footer-title {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+}
+.footer-links,
+.footer-contact {
+  font-size: 0.98rem;
+  color: #2d3a4a;
+  margin-bottom: 8px;
+}
+.footer-links a {
+  color: #2d3a4a;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 6px;
+}
+.footer-links a:hover {
+  text-decoration: underline;
+}
+.footer-social {
+  display: flex;
+  gap: 16px;
+  margin-top: 8px;
+}
+.footer-social i {
+  font-size: 1.2rem;
+  color: #2d3a4a;
+  transition: color 0.2s;
+}
+.footer-social i:hover {
+  color: #aee1c9;
+}
+.footer-hashtag {
+  font-family: "Permanent Marker", cursive, Arial, sans-serif;
+  font-size: 1.5rem;
+  color: #2d3a4a;
+  text-align: right;
+  margin-top: 18px;
+  letter-spacing: 1px;
+}
+@media (max-width: 900px) {
+  .donation-form-section {
+    flex-direction: column;
+    align-items: center;
+    margin-top: -60px;
+  }
+  .footer-content {
+    flex-direction: column;
+    gap: 24px;
+    padding: 0 16px;
+  }
+  .donation-hero-content {
+    padding: 40px 10px 0 0;
+  }
+}
