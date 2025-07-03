@@ -48,7 +48,7 @@
   position: absolute;
   width: 80px;
   height: 3px;
-  background-color: #ff4d4d;
+  background-color: #ffcc00;
   bottom: 0;
   left: 0;
 }
@@ -102,7 +102,7 @@
 
 .progress {
   height: 100%;
-  background: #ff4d4d;
+  background: #ffcc00;
 }
 
 .card-footer {
@@ -170,7 +170,7 @@
 }
 
 .view-campaign-btn {
-  background-color: #ff4d4d;
+  background-color: #ffcc00;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -181,7 +181,7 @@
 }
 
 .view-campaign-btn:hover {
-  background-color: #e44141;
+  background-color: #e4b800;
 }
 
 .pagination {
@@ -201,7 +201,7 @@
 }
 
 .page-btn.active {
-  background: #ff4d4d;
+  background: #ffcc00;
   color: white;
 }
 
@@ -248,7 +248,7 @@
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background-color: #ff4d4d;
+  background-color: #ffcc00;
   margin: 0 auto 20px;
   position: relative;
 }
@@ -295,7 +295,7 @@
 }
 
 .member-title {
-  color: #ff4d4d;
+  color: #ffcc00;
   font-size: 0.9rem;
 }
 
@@ -324,7 +324,7 @@
 
 .search-btn {
   padding: 12px 20px;
-  background-color: #ff4d4d;
+  background-color: #ffcc00;
   color: white;
   border: none;
   border-radius: 0 5px 5px 0;
@@ -392,7 +392,7 @@
 }
 
 .read-more-btn {
-  background-color: #ff4d4d;
+  background-color: #ffcc00;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -431,7 +431,7 @@
 
 .read-more-link {
   display: inline-block;
-  color: #ff4d4d;
+  color: #ffcc00;
   margin-top: 15px;
   font-weight: 500;
   cursor: pointer;
@@ -476,7 +476,7 @@
 
 .subscribe-btn {
   padding: 12px 20px;
-  background-color: #ff4d4d;
+  background-color: #ffcc00;
   color: white;
   border: none;
   border-radius: 0 5px 5px 0;
@@ -504,7 +504,7 @@
 .page-icon {
   width: 50px;
   height: 50px;
-  background: #ff4d4d;
+  background: #ffcc00;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -525,7 +525,7 @@
 }
 
 .view-page-link {
-  color: #ff4d4d;
+  color: #ffcc00;
   font-weight: 500;
   text-decoration: none;
   display: inline-flex;
@@ -594,7 +594,7 @@
 
 .site-search-btn {
   padding: 12px 20px;
-  background-color: #ff4d4d;
+  background-color: #ffcc00;
   color: white;
   border: none;
   border-radius: 0 5px 5px 0;
@@ -626,7 +626,7 @@
 .info-icon {
   width: 50px;
   height: 50px;
-  background: #ff4d4d;
+  background: #ffcc00;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -687,7 +687,7 @@
 }
 
 .submit-btn {
-  background-color: #ff4d4d;
+  background-color: #ffcc00;
   color: white;
   border: none;
   padding: 12px 25px;
@@ -800,7 +800,7 @@
     flex-direction: column;
     align-items: stretch;
   }
-  
+
   .filter-dropdown,
   .search-box,
   .category-select {
@@ -853,13 +853,13 @@
   .card {
     min-width: calc(50% - 10px); /* Two cards per row on medium screens */
   }
-  
+
   .about-content {
     gap: 30px;
   }
   .values-grid {
-     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-     gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
   }
   .team-grid {
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
@@ -880,8 +880,8 @@
     gap: 30px;
   }
   .contact-info {
-     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-     gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
   }
   .contact-form-container {
     padding: 25px;

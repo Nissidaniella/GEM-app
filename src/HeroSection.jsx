@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./HeroSection.css";
 import "./hero-override.css";
 import NavBar from "./components/nav-bar";
+import kidsImg from "./images/kids.jpg";
 
 const HeroSection = ({ onNavigate, currentPage }) => {
   const [activePage, setActivePage] = useState(currentPage);
@@ -28,6 +29,11 @@ const HeroSection = ({ onNavigate, currentPage }) => {
       className={`hero-container ${currentPage === "home" ? "is-home" : ""} ${
         mobileMenuOpen ? "mobile-menu-active" : ""
       }`}
+      style={
+        currentPage === "home"
+          ? { background: `url(${kidsImg}) center/cover no-repeat` }
+          : {}
+      }
     >
       {/* Top Navigation Bar */}
       <NavBar
@@ -41,10 +47,17 @@ const HeroSection = ({ onNavigate, currentPage }) => {
       {currentPage === "home" && (
         <div className="hero-overlay">
           <div className="hero-content">
-            <h2 className="hero-subtitle">HELPING PEOPLE</h2>
-            <h1 className="hero-title">together</h1>{" "}
+            <h2 className="hero-subtitle">. . . . . .</h2>
+            <h1 className="hero-title loading07">
+              <span data-text="G">G</span>
+              <span data-text="E">E</span>
+              <span data-text="M">M</span>
+              <span data-text="I">I</span>
+              <span data-text="N">N</span>
+              <span data-text="I">I</span>
+            </h1>{" "}
             <p className="hero-desc">
-              Raise money for charity and personal causes.
+              Be the <span className="italic">GEM</span> that changes a life.
             </p>
             <button
               className="learn-more-btn"
