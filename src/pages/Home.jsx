@@ -1,9 +1,54 @@
 import React from "react";
 import "../PageStyles.css";
+import "./home.css";
 
 const Home = () => {
   return (
     <div className="page-container">
+      <section className="home-yellow-section">
+        <h2 className="home-yellow-section-title">
+          Godman Earl Mission And International Initiatives <br></br>(GEMINI)
+        </h2>
+        <div className="home-cards-row">
+          {/* Donation Card */}
+          <div className="home-card">
+            <div className="home-card-icon">
+              <i
+                className="fas fa-hand-holding-heart"
+                aria-label="Donation"
+              ></i>
+            </div>
+            <div className="home-card-title">Competence</div>
+            <div className="home-card-subtitle">
+              Gemini relies on skilled teams and partners to deliver impactful
+              education, health, and empowerment programs.
+            </div>
+          </div>
+          {/* Fundrising Card */}
+          <div className="home-card">
+            <div className="home-card-icon">
+              <i className="fas fa-coins" aria-label="Fundrising"></i>
+            </div>
+            <div className="home-card-title">Influence</div>
+            <div className="home-card-subtitle">
+              Gemini works with communities and partners to expand its reach and
+              inspire global change.
+            </div>
+          </div>
+          {/* Volunteer Card */}
+          <div className="home-card">
+            <div className="home-card-icon">
+              <i className="fas fa-hands-helping" aria-label="Volunteer"></i>
+            </div>
+            <div className="home-card-title">Excellence</div>
+            <div className="home-card-subtitle">
+              Gemini upholds high standards to ensure quality, accountability,
+              and lasting transformation.
+            </div>
+          </div>
+        </div>
+      </section>
+
       <div className="page-content">
         <h1 className="page-title">Home Page</h1>
         <p className="page-description">
@@ -53,6 +98,8 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+      
     </div>
   );
 };

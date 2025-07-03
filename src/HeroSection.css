@@ -10,8 +10,7 @@
 .hero-container {
   position: relative;
   width: 100%;
-  /* Default height will be auto, background for navbar area */
-  background-color: #222; /* Example default background for navbar */
+  background-color: #222; 
   font-family: "Roboto", sans-serif;
   min-height: 80px; /* Ensure navbar has some space */
   transition: background-color 0.3s ease; /* Smooth transition for background */

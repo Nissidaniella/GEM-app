@@ -68,6 +68,8 @@ const HeroSection = ({ onNavigate, currentPage }) => {
           </div>
         </div>
       )}
+
+      {/* Duplicated section below HeroSection as requested */}
     </div>
   );
 };

@@ -1,0 +1,52 @@
+/* Home Page Styles */
+
+.home-yellow-section {
+  background: #ffcc00;
+  padding: 40px 0;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.home-yellow-section-title {
+  color: white;
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+.home-cards-row {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.home-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+  padding: 32px 24px;
+  width: 300px;
+  height: 260px;
+  max-width: 90%;
+  transition: transform 0.35s cubic-bezier(0.22, 0.61, 0.36, 1),
+    box-shadow 0.35s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.home-card:hover {
+  transform: scale(1.06);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.13);
+}
+.home-card-icon {
+  font-size: 3rem;
+  margin-bottom: 12px;
+  color: #f8cb1581;
+}
+.home-card-title {
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-bottom: 6px;
+}
+.home-card-subtitle {
+  color: #bbb;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+/* Existing .page-container, .page-content, .page-title, .page-description, .content-section, .feature-cards, .card, .card-img, .placeholder-img, .progress-bar, .progress, .card-footer styles can remain in PageStyles.css or be moved here if you want full separation. */
