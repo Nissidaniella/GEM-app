@@ -1,5 +1,19 @@
 /* Home Page Styles */
 
+
+
+.page-container {
+  
+  padding: 40px 0; /* Move padding here */
+}
+.home-yellow-section,
+.impact-section,
+.gem-section {
+  padding: 0; /* Remove vertical padding from these */
+}
+
+
+
 .home-yellow-section {
   background: #ffcc00;
   padding: 40px 0;
@@ -54,6 +68,7 @@
   padding: 60px 0 60px 0;
   display: flex;
   justify-content: center;
+   margin-bottom: 40px;
 }
 .impact-inner {
   display: flex;
@@ -155,7 +170,6 @@
   color: #000000;
   font-weight: 700;
   text-decoration: underline;
- 
 }
 .impact-text p {
   color: #222;
@@ -216,6 +230,194 @@
   }
   .impact-text h2 {
     font-size: 1.3rem;
+  }
+}
+
+.gem-section {
+  background: #dae9f974;
+  padding: 60px 0 80px 0;
+  width: 100%;
+}
+.gem-inner {
+  display: flex;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  gap: 48px;
+}
+.gem-left {
+  flex: 1 1 40%;
+  min-width: 320px;
+  max-width: 420px;
+  padding-top: 18px;
+}
+.gem-mini-title {
+  color: #ecc733;
+  background-color: #ffcc001d;
+ 
+  padding: 2px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  margin-bottom: 10px;
+  display: inline-block;
+  border-bottom: 2px solid #e0e6e8;
+  padding-bottom: 2px;
+}
+.gem-title-row {
+  margin-bottom: 18px;
+}
+.gem-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #22313f;
+  line-height: 1.1;
+  margin-bottom: 0;
+}
+.gem-desc {
+  color: #7b8a8e;
+  font-size: 1.08rem;
+  margin-top: 18px;
+  line-height: 1.7;
+}
+.gem-cards {
+  display: flex;
+  gap: 32px;
+  flex: 1 1 60%;
+  justify-content: flex-end;
+}
+.gem-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+  padding: 32px 24px 28px 24px;
+  width: 240px;
+  min-width: 200px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+.gem-card:hover {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.13);
+  transform: translateY(-6px) scale(1.03);
+}
+.gem-card-active {
+  background: #fffbe6;
+  color: #222;
+ 
+}
+.gem-card-active .gem-card-title,
+.gem-card-active .gem-card-desc {
+  color: #222;
+}
+.gem-card-icon {
+  font-size: 2.5rem;
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gem-card-icon-purple {
+  color: #a084e8;
+}
+.gem-card-icon-blue {
+  color: #fff;
+  background: #1e7d8c;
+  border-radius: 50%;
+  padding: 10px;
+}
+.gem-card-icon-orange {
+  color: #ff9f43;
+}
+.gem-card-icon-yellow {
+  color: #ffcc00;
+  background: #fffbe6;
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0 2px 8px #ffcc0033;
+}
+.gem-card-title {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+.gem-card-desc {
+  color: #7b8a8e;
+  font-size: 0.98rem;
+  margin-bottom: 18px;
+  line-height: 1.5;
+}
+.gem-card-btn {
+  background: #ffcc00;
+  color: #222;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+  box-shadow: 0 2px 8px #ffcc0033;
+}
+.gem-card-btn:hover {
+  background: #222;
+  color: #ffcc00;
+}
+.gem-card-active .gem-card-btn {
+  background: #222;
+  color: #ffcc00;
+}
+.gem-card-active .gem-card-btn:hover {
+  background: #ffcc00;
+  color: #222;
+}
+@media (max-width: 1100px) {
+  .gem-inner {
+    flex-direction: column;
+    gap: 32px;
+    align-items: flex-start;
+  }
+  .gem-cards {
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 800px) {
+  .gem-inner {
+    padding: 0 10px;
+  }
+  .gem-cards {
+    gap: 16px;
+  }
+  .gem-card {
+    width: 180px;
+    padding: 20px 10px 18px 10px;
+  }
+}
+@media (max-width: 600px) {
+  .gem-section {
+    padding: 30px 0 40px 0;
+  }
+  .gem-title {
+    font-size: 1.5rem;
+  }
+  .gem-cards {
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+  }
+  .gem-card {
+    width: 100%;
+    min-width: 0;
+    padding: 16px 8px 12px 8px;
   }
 }
 

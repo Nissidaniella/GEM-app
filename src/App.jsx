@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import HeroSection from "./HeroSection";
 import Home from "./pages/Home";
 import Campaigns from "./pages/Campaigns";
@@ -10,10 +10,25 @@ import "./App.css";
 
 function App() {
   const [currentPage, setCurrentPage] = useState("home");
+  const [showScrollTop, setShowScrollTop] = useState(false);
 
   // Function to handle navigation
   const navigateTo = (page) => {
     setCurrentPage(page);
+  };
+
+  // Show scroll-to-top button when scrolled down
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowScrollTop(window.scrollY > 200);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  // Scroll to top function
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   // Render the appropriate page based on currentPage state
@@ -39,11 +54,16 @@ function App() {
   return (
     <div className="app">
       <HeroSection onNavigate={navigateTo} currentPage={currentPage} />
-      <div className="page-content-container">
-        {" "}
-        {/* Added for clarity and potential styling */}
-        {renderPage()}
-      </div>
+      <div className="page-content-container">{renderPage()}</div>
+      {showScrollTop && (
+        <button
+          className="scroll-to-top-btn"
+          onClick={scrollToTop}
+          aria-label="Scroll to top"
+        >
+          <i className="fas fa-arrow-up"></i>
+        </button>
+      )}
     </div>
   );
 }

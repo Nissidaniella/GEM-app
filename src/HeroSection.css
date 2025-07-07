@@ -10,7 +10,7 @@
 .hero-container {
   position: relative;
   width: 100%;
-  background-color: #222; 
+  background-color: #222;
   font-family: "Roboto", sans-serif;
   min-height: 80px; /* Ensure navbar has some space */
   transition: background-color 0.3s ease; /* Smooth transition for background */
@@ -192,17 +192,18 @@
 /* --- loading07 effect for hero-title --- */
 .hero-title.loading07 span {
   position: relative;
-  color: rgba(242, 238, 8, 0.151);
-   
+  color: #fff;
 }
 .hero-title.loading07 span::after {
   position: absolute;
   left: 0;
+  bottom: 1;
   content: attr(data-text);
-  color: #fff;
+  color: #ffcc009d;
   opacity: 0;
   transform: scale(1.5);
-  animation: loading07 5s infinite; /* Slower animation: was 3s, now 5s */
+  animation: loading07 5s 1; /* Only play once */
+  animation-fill-mode: forwards;
 }
 .hero-title.loading07 span:nth-child(1)::after {
   animation-delay: 0s;
@@ -276,6 +277,41 @@
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border: none;
+}
+
+/* Scroll to Top Button */
+.scroll-to-top-btn {
+  position: fixed;
+  bottom: 36px;
+  right: 36px;
+  width: 50px;
+  height: 54px;
+  border-radius: 50%;
+  background: #ffcc00;
+  color: #222;
+  border: none;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 9999;
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+}
+.scroll-to-top-btn:hover {
+  background: #222;
+  color: #ffcc00;
+  transform: translateY(-4px) scale(1.08);
+}
+@media (max-width: 600px) {
+  .scroll-to-top-btn {
+    right: 16px;
+    bottom: 16px;
+    width: 44px;
+    height: 44px;
+    font-size: 1.4rem;
+  }
 }
 
 /* Responsive Styles */

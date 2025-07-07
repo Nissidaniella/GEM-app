@@ -20,7 +20,7 @@
 .page-content-container {
   padding: 20px;
   flex-grow: 1;
-  background-color: #f4f4f4; /* Optional: background to distinguish page content area */
+  background: rgba(246, 247, 253, 0.716); /* Optional: background to distinguish page content area */
   width: 100%; /* Ensure it takes full width */
   box-sizing: border-box; /* Include padding in width calculation */
 }

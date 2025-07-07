@@ -7,10 +7,17 @@ import kidsImg from "./images/kids.jpg";
 const HeroSection = ({ onNavigate, currentPage }) => {
   const [activePage, setActivePage] = useState(currentPage);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false); // State for mobile menu
+  const [showHeroAnim, setShowHeroAnim] = useState(currentPage === "home");
 
   useEffect(() => {
     setActivePage(currentPage);
     setMobileMenuOpen(false); // Close mobile menu on page change
+    if (currentPage === "home") {
+      setShowHeroAnim(false); // Reset
+      setTimeout(() => setShowHeroAnim(true), 10); // Trigger animation
+    } else {
+      setShowHeroAnim(false);
+    }
   }, [currentPage]);
 
   const handleNavigate = (page) => {
@@ -48,7 +55,7 @@ const HeroSection = ({ onNavigate, currentPage }) => {
         <div className="hero-overlay">
           <div className="hero-content">
             <h2 className="hero-subtitle">. . . . . .</h2>
-            <h1 className="hero-title loading07">
+            <h1 className={`hero-title${showHeroAnim ? " loading07" : ""}`}>
               <span data-text="G">G</span>
               <span data-text="E">E</span>
               <span data-text="M">M</span>

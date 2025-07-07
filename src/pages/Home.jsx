@@ -113,7 +113,6 @@ const Home = (props) => {
         </div>
       </div> */}
 
-      {/* Duplicated impact section below page-content */}
       <section className="impact-section">
         <div className="impact-inner">
           <div className="impact-images" style={{ position: "relative" }}>
@@ -155,7 +154,6 @@ const Home = (props) => {
             ></div>
           </div>
           <div className="impact-text" style={{ position: "relative" }}>
-            
             <img
               className="impact-img-patch impact-patch-about"
               src={patch2}
@@ -170,7 +168,7 @@ const Home = (props) => {
                 position: "absolute",
               }}
             />
-            
+
             <img
               className="impact-img-patch impact-patch-yourhelp"
               src={patch2}
@@ -235,6 +233,77 @@ const Home = (props) => {
                 Donate
               </button>
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* GEM Section - replica of provided design */}
+      <section className="gem-section">
+        <div className="gem-inner">
+          <div className="gem-left">
+            <span className="gem-mini-title">Be a GEM</span>
+            <div className="gem-title-row">
+              <h2 className="gem-title">
+                Your Role
+                <br />
+                Matters.
+              </h2>
+            </div>
+            <p className="gem-desc">
+              Support the Gemini mission—volunteer, become a prayer partner, or
+              join our organizational team.
+            </p>
+          </div>
+          <div className="gem-cards">
+            <div className="gem-card">
+              <div className="gem-card-icon gem-card-icon-yellow">
+                <i className="fas fa-hands-helping"></i>
+              </div>
+              <div className="gem-card-title">Volunteer Opportunities</div>
+              <div className="gem-card-desc">
+                Contribute your time and talents to our outreach and daily
+                operations. Roles vary by skillset and availability.
+              </div>
+              <button
+                className="gem-card-btn"
+                onClick={() => handleNavigate("contact")}
+              >
+                <i className="fas fa-arrow-right"></i>
+              </button>
+            </div>
+            <div className="gem-card gem-card-active">
+              <div className="gem-card-icon gem-card-icon-yellow">
+                <i className="fas fa-praying-hands"></i>
+              </div>
+              <div className="gem-card-title">Prayer Partner</div>
+              <div className="gem-card-desc">
+                Support the Gemini mission spiritually by praying for our
+                programs, people, and global impact.
+              </div>
+              <button
+                className="gem-card-btn"
+                onClick={() => handleNavigate("contact")}
+              >
+                <i className="fas fa-arrow-right"></i>
+              </button>
+            </div>
+            <div className="gem-card">
+              <div className="gem-card-icon gem-card-icon-yellow">
+                <i className="fas fa-users-cog"></i>
+              </div>
+              <div className="gem-card-title">Organizational Team</div>
+              <div className="gem-card-desc">
+                Join a dynamic group working behind the scenes to keep Gemini
+                thriving—from planning and logistics to execution and
+                evaluation.
+              </div>
+              <button
+                className="gem-card-btn"
+                onClick={() => handleNavigate("contact")}
+              >
+                <i className="fas fa-arrow-right"></i>
+              </button>
+            </div>
           </div>
         </div>
       </section>
