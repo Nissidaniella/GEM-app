@@ -20,7 +20,7 @@ function App() {
   const renderPage = () => {
     switch (currentPage) {
       case "home":
-        return <Home />;
+        return <Home handleNavigate={navigateTo} />;
       case "campaigns":
         return <Campaigns />;
       case "about":
@@ -32,7 +32,7 @@ function App() {
       case "donation":
         return <Donation />;
       default:
-        return <Home />;
+        return <Home handleNavigate={navigateTo} />;
     }
   };
 
