@@ -15,7 +15,7 @@
 
 
 .home-yellow-section {
-  background: #ffcc00;
+  background: #FEB900;
   padding: 40px 0;
   text-align: center;
   margin-bottom: 40px;
@@ -253,8 +253,8 @@
   padding-top: 18px;
 }
 .gem-mini-title {
-  color: #ecc733;
-  background-color: #ffcc001d;
+  color: #FEB900;
+  background-color: #000000;
  
   padding: 2px;
   font-weight: 500;
@@ -320,18 +320,7 @@
   align-items: center;
   justify-content: center;
 }
-.gem-card-icon-purple {
-  color: #a084e8;
-}
-.gem-card-icon-blue {
-  color: #fff;
-  background: #1e7d8c;
-  border-radius: 50%;
-  padding: 10px;
-}
-.gem-card-icon-orange {
-  color: #ff9f43;
-}
+
 .gem-card-icon-yellow {
   color: #ffcc00;
   background: #fffbe6;
@@ -422,3 +411,4 @@
 }
 
 /* Existing .page-container, .page-content, .page-title, .page-description, .content-section, .feature-cards, .card, .card-img, .placeholder-img, .progress-bar, .progress, .card-footer styles can remain in PageStyles.css or be moved here if you want full separation. */
+

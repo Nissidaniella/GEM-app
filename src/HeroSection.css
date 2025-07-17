@@ -108,22 +108,8 @@
   gap: 20px;
 }
 
-.social-icon,
-.search-icon,
-.user-icon {
-  color: white;
-  font-size: 1.2rem;
-  cursor: pointer;
-}
-
-.phone-number {
-  color: white;
-  font-size: 0.9rem;
-  font-weight: 500;
-}
-
 .donate-btn {
-  background-color: rgb(250, 190, 76);
+  background-color:#FEB900 ;
   color: white;
   border: none;
   padding: 12px 30px;
@@ -159,7 +145,7 @@
   text-transform: lowercase;
   font-size: larger;
   font-weight: 700;
-  color: #f4da18;
+  color: #FEB900;
 
   font-family: italic;
 }
@@ -260,8 +246,8 @@
 
 .learn-more-btn {
   background-color: transparent;
-  color: #ffcc00;
-  border: 2px solid #ffcc00;
+  color:#FEB900 ;
+  border: 2px solid #FEB900;
   padding: 15px 40px;
   font-size: 0.9rem;
   cursor: pointer;
@@ -287,7 +273,7 @@
   width: 50px;
   height: 54px;
   border-radius: 50%;
-  background: #ffcc00;
+  background: #FEB900;
   color: #222;
   border: none;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);

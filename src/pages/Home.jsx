@@ -5,10 +5,10 @@ import patch from "../images/patch.PNG";
 import patch2 from "../images/patch2.PNG";
 import healthImg from "../images/health.jpg";
 import bibleImg from "../images/bible.jpg";
-import handsupImg from "../images/handsup.jpg";
 import class1Img from "../images/class1.jpg";
 import praykImg from "../images/prayk.jpg";
 import coinsImg from "../images/coins.jpg";
+
 
 const Home = (props) => {
   // Accept handleNavigate from props or fallback to window.location.hash
@@ -25,7 +25,7 @@ const Home = (props) => {
           Godman Earl Mission And International Initiatives <br></br>(GEMINI)
         </h2>
         <div className="home-cards-row">
-          {/* Donation Card */}
+          
           <div className="home-card">
             <div className="home-card-icon">
               <i
@@ -39,7 +39,7 @@ const Home = (props) => {
               education, health, and empowerment programs.
             </div>
           </div>
-          {/* Fundrising Card */}
+          
           <div className="home-card">
             <div className="home-card-icon">
               <i className="fas fa-coins" aria-label="Fundrising"></i>
@@ -116,7 +116,7 @@ const Home = (props) => {
       <section className="impact-section">
         <div className="impact-inner">
           <div className="impact-images" style={{ position: "relative" }}>
-            {/* Patch behind one image */}
+           
             <img
               className="impact-img-patch impact-patch-yellow"
               src={patch2}
@@ -131,7 +131,7 @@ const Home = (props) => {
                 position: "absolute",
               }}
             />
-            {/* Images */}
+            
             <div
               className="impact-img impact-img1"
               style={{ backgroundImage: `url(${healthImg})` }}
@@ -237,11 +237,30 @@ const Home = (props) => {
         </div>
       </section>
 
-      {/* GEM Section - replica of provided design */}
+     <div className="content-section">
+          <h2>Our Story</h2>
+          <div className="about-content">
+            <div className="about-image placeholder-img">
+
+            </div>
+            <div className="about-text">
+              <p>
+                Fundor was established in 2020 with a vision to democratize
+                fundraising and make it accessible to everyone. Our founders
+                recognized the need for a platform that could connect donors
+                directly with causes they care about, removing barriers and
+                reducing overhead costs.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      
+
       <section className="gem-section">
         <div className="gem-inner">
           <div className="gem-left">
-            <span className="gem-mini-title">Be a GEM</span>
+            <span className="gem-mini-title">Be A GEM</span>
             <div className="gem-title-row">
               <h2 className="gem-title">
                 Your Role
