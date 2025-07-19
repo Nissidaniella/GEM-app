@@ -1,9 +1,6 @@
 /* Home Page Styles */
 
-
-
 .page-container {
-  
   padding: 40px 0; /* Move padding here */
 }
 .home-yellow-section,
@@ -12,10 +9,8 @@
   padding: 0; /* Remove vertical padding from these */
 }
 
-
-
 .home-yellow-section {
-  background: #FEB900;
+  background: #feb900;
   padding: 40px 0;
   text-align: center;
   margin-bottom: 40px;
@@ -68,7 +63,7 @@
   padding: 60px 0 60px 0;
   display: flex;
   justify-content: center;
-   margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 .impact-inner {
   display: flex;
@@ -253,9 +248,9 @@
   padding-top: 18px;
 }
 .gem-mini-title {
-  color: #FEB900;
+  color: #feb900;
   background-color: #000000;
- 
+
   padding: 2px;
   font-weight: 500;
   letter-spacing: 0.02em;
@@ -307,7 +302,6 @@
 .gem-card-active {
   background: #fffbe6;
   color: #222;
- 
 }
 .gem-card-active .gem-card-title,
 .gem-card-active .gem-card-desc {
@@ -410,5 +404,380 @@
   }
 }
 
-/* Existing .page-container, .page-content, .page-title, .page-description, .content-section, .feature-cards, .card, .card-img, .placeholder-img, .progress-bar, .progress, .card-footer styles can remain in PageStyles.css or be moved here if you want full separation. */
+/* Earl Section Styles */
+.earl-section {
+  display: flex;
+  align-items: stretch;
+  background: #181818;
+  color: #e6c178;
+  min-height: 480px;
+  border-radius: 18px;
+  margin: 60px auto 0 auto;
+  max-width: 1200px;
+  box-shadow: 0 6px 40px 0 #000a, 0 1.5px 0 #e6c17844;
+  position: relative;
+  overflow: hidden;
+  font-family: "Orbitron", "Montserrat", "Segoe UI", Arial, sans-serif;
+}
+.earl-sidebar {
+  background: #111;
+  width: 90px;
+  min-width: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 36px 0 36px 0;
+  border-top-left-radius: 18px;
+  border-bottom-left-radius: 18px;
+  border-right: 1.5px solid #2a2212;
+  z-index: 2;
+}
+.earl-logo {
+  width: 38px;
+  height: 38px;
+  background: #222;
+  border-radius: 50%;
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: #e6c178;
+  font-weight: bold;
+}
+.earl-sidebar-labels {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+.earl-sidebar-label {
+  color: #e6c178;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  opacity: 0.8;
+}
+.earl-vertical {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  margin: 0 auto;
+  font-size: 0.95rem;
+}
+.earl-sidebar-socials {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-bottom: 0;
+}
+.earl-social {
+  color: #e6c178;
+  font-size: 1.2rem;
+  opacity: 0.8;
+  transition: color 0.2s, opacity 0.2s;
+}
+.earl-social:hover {
+  color: #fff;
+  opacity: 1;
+}
+.earl-main-card {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: #181818;
+  border-radius: 0 18px 18px 0;
+  position: relative;
+  padding: 48px 48px 48px 48px;
+  min-width: 0;
+  z-index: 1;
+}
+.earl-nav {
+  display: flex;
+  gap: 36px;
+  justify-content: flex-end;
+  margin-bottom: 18px;
+}
+.earl-nav-link {
+  color: #e6c178;
+  font-size: 1.05rem;
+  font-weight: 500;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: color 0.2s, opacity 0.2s;
+  position: relative;
+}
+.earl-nav-link:hover {
+  color: #fff;
+  opacity: 1;
+}
+.earl-card-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 48px;
+  margin-bottom: 32px;
+}
+.earl-card-text {
+  flex: 1 1 60%;
+  min-width: 220px;
+}
+.earl-card-title {
+  font-size: 2.6rem;
+  font-weight: 900;
+  color: #e6c178;
+  letter-spacing: 0.01em;
+  margin-bottom: 12px;
+  line-height: 1.1;
+  text-shadow: 0 2px 12px #000a;
+}
+.earl-card-underline {
+  width: 60px;
+  height: 3px;
+  background: #e6c178;
+  margin-bottom: 18px;
+  border-radius: 2px;
+}
+.earl-card-desc {
+  color: #e6c178cc;
+  font-size: 1.08rem;
+  font-weight: 400;
+  margin-bottom: 0;
+  line-height: 1.6;
+  max-width: 340px;
+}
+.earl-card-image-wrap {
+  flex: 1 1 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 160px;
+}
+.earl-card-image-border {
+  border: 2.5px solid #e6c178;
+  border-radius: 12px;
+  padding: 6px;
+  box-shadow: 0 0 24px #e6c17833, 0 2px 16px #000a;
+  background: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.earl-card-image {
+  width: 180px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 24px #000a;
+  background: #222;
+}
+.earl-card-nav-arrows {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  margin-bottom: 18px;
+}
+.earl-arrow {
+  color: #e6c178;
+  font-size: 1.6rem;
+  background: #222;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px #e6c17833;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+  border: 1.5px solid #e6c17844;
+}
+.earl-arrow:hover {
+  background: #e6c178;
+  color: #181818;
+  transform: scale(1.08);
+}
+.earl-card-dots {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 18px;
+}
+.earl-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #e6c17844;
+  transition: background 0.2s;
+}
+.earl-dot-active {
+  background: #e6c178;
+}
+.earl-card-goldbar {
+  position: absolute;
+  right: 0;
+  top: 40px;
+  width: 2.5px;
+  height: 80%;
+  background: #e6c178;
+  border-radius: 2px;
+  opacity: 0.7;
+}
+.earl-goldbar-side {
+  position: absolute;
+  right: -48px;
+  top: 40%;
+  width: 70px;
+  height: 32px;
+  background: #e6c178;
+  border-radius: 0 8px 8px 0;
+  z-index: 3;
+}
 
+@media (max-width: 1000px) {
+  .earl-section {
+    flex-direction: column;
+    min-height: 0;
+    padding: 0;
+    max-width: 98vw;
+  }
+  .earl-main-card {
+    padding: 32px 16px 32px 16px;
+  }
+  .earl-card-content {
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-start;
+  }
+  .earl-card-image {
+    width: 140px;
+    height: 160px;
+  }
+  .earl-goldbar-side {
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+  .earl-section {
+    border-radius: 0;
+    margin: 24px 0 0 0;
+    min-width: 0;
+    box-shadow: none;
+  }
+  .earl-sidebar {
+    width: 60px;
+    min-width: 40px;
+    padding: 18px 0 18px 0;
+    border-radius: 0;
+  }
+  .earl-main-card {
+    border-radius: 0;
+    padding: 18px 4vw 18px 4vw;
+  }
+  .earl-card-title {
+    font-size: 1.3rem;
+  }
+  .earl-card-image {
+    width: 90px;
+    height: 100px;
+  }
+}
+
+/* --- Campaign Modal Styles --- */
+.campaign-modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: transparent;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: auto;
+}
+.campaign-modal {
+  background: rgba(255, 255, 255, 0.18);
+  border-radius: 18px;
+  box-shadow: 0 8px 40px #000a, 0 0 0 2px rgba(255,255,255,0.25);
+  padding: 32px 24px 24px 24px;
+  max-width: 400px;
+  width: 90vw;
+  text-align: center;
+  position: relative;
+  animation: modalIn 0.3s cubic-bezier(.4,1.4,.6,1) forwards;
+  backdrop-filter: blur(18px) saturate(180%);
+  -webkit-backdrop-filter: blur(18px) saturate(180%);
+  border: 2px solid rgba(255,255,255,0.35);
+}
+@keyframes modalIn {
+  0% { transform: scale(0.8) translateY(40px); opacity: 0; }
+  100% { transform: scale(1) translateY(0); opacity: 1; }
+}
+.campaign-modal-img {
+  width: 100%;
+  max-width: 320px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin: 0 auto 18px auto;
+  box-shadow: 0 2px 16px #0002;
+  display: block;
+}
+.campaign-modal-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #222;
+}
+.campaign-modal-summary {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 14px;
+}
+.campaign-modal-why {
+  font-size: 1.08rem;
+  color: #222;
+  margin-bottom: 22px;
+  font-weight: 500;
+}
+.campaign-modal-actions {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+.campaign-modal-action {
+  background: #f8cb15;
+  color: #222;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 18px;
+  font-size: 1.08rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px #f8cb1533;
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+}
+.campaign-modal-action:hover {
+  background: #222;
+  color: #f8cb15;
+  transform: scale(1.07);
+}
+.campaign-modal-back {
+  background: #222;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 8px;
+  box-shadow: 0 2px 8px #0002;
+  transition: background 0.2s, color 0.2s;
+}
+.campaign-modal-back:hover {
+  background: #f8cb15;
+  color: #222;
+}
+
+/* Existing .page-container, .page-content, .page-title, .page-description, .content-section, .feature-cards, .card, .card-img, .placeholder-img, .progress-bar, .progress, .card-footer styles can remain in PageStyles.css or be moved here if you want full separation. */
