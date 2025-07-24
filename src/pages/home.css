@@ -696,7 +696,7 @@
 }
 .campaign-modal {
   background: rgba(255, 255, 255, 0.18);
-  border-radius: 18px;
+  border-radius: 0;
   box-shadow: 0 8px 40px #000a, 0 0 0 2px rgba(255,255,255,0.25);
   padding: 32px 24px 24px 24px;
   max-width: 400px;
@@ -717,7 +717,7 @@
   max-width: 320px;
   height: 220px;
   object-fit: cover;
-  border-radius: 12px;
+  border-radius: 0;
   margin: 0 auto 18px auto;
   box-shadow: 0 2px 16px #0002;
   display: block;
@@ -726,16 +726,16 @@
   font-size: 1.3rem;
   font-weight: 700;
   margin-bottom: 8px;
-  color: #222;
+  color: #000000;
 }
 .campaign-modal-summary {
   font-size: 1rem;
-  color: #444;
+  color: #e9d8d8;
   margin-bottom: 14px;
 }
 .campaign-modal-why {
   font-size: 1.08rem;
-  color: #222;
+  color: #000000;
   margin-bottom: 22px;
   font-weight: 500;
 }
@@ -749,7 +749,7 @@
   background: #f8cb15;
   color: #222;
   border: none;
-  border-radius: 8px;
+  border-radius: 0;
   padding: 10px 18px;
   font-size: 1.08rem;
   font-weight: 600;
@@ -766,7 +766,7 @@
   background: #222;
   color: #fff;
   border: none;
-  border-radius: 8px;
+  border-radius: 0;
   padding: 8px 24px;
   font-size: 1rem;
   font-weight: 600;

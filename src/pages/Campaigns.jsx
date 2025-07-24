@@ -78,7 +78,7 @@ const campaignData = [
 
 const CAMPAIGNS_PER_PAGE = 4;
 
-const Campaigns = () => {
+const Campaigns = ({ handleNavigate }) => {
   const [page, setPage] = useState(1);
   const [modalIdx, setModalIdx] = useState(null);
   const totalPages = Math.ceil(campaignData.length / CAMPAIGNS_PER_PAGE);
@@ -186,18 +186,21 @@ const Campaigns = () => {
               <button
                 className="campaign-modal-action"
                 style={{ outline: "none" }}
+                onClick={() => handleNavigate("contact")}
               >
                 Donate
               </button>
               <button
                 className="campaign-modal-action"
                 style={{ outline: "none" }}
+                onClick={() => handleNavigate("contact")}
               >
                 Volunteer
               </button>
               <button
                 className="campaign-modal-action"
                 style={{ outline: "none" }}
+                onClick={() => handleNavigate("contact")}
               >
                 Pray
               </button>

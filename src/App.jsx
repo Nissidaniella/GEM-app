@@ -37,7 +37,7 @@ function App() {
       case "home":
         return <Home handleNavigate={navigateTo} />;
       case "campaigns":
-        return <Campaigns />;
+        return <Campaigns handleNavigate={navigateTo} />;
       case "about":
         return <About />;
       case "blog":

@@ -323,11 +323,11 @@ const Home = (props) => {
 
       {/* EARL SECTION - stylized profile card */}
       <section className="earl-section">
-        <aside className="earl-sidebar">
-          <div className="earl-logo">{/* Logo or icon can go here */}</div>
+        <div className="earl-sidebar">
+          <div className="earl-logo"></div>
           <div className="earl-sidebar-labels">
-            <span className="earl-sidebar-label earl-vertical">Alpha</span>
-            <span className="earl-sidebar-label earl-vertical">Leader</span>
+            <span className="earl-sidebar-label">Alpha</span>
+            <span className="earl-sidebar-label">Leader</span>
           </div>
           <div className="earl-sidebar-socials">
             <a href="#" className="earl-social">
@@ -343,30 +343,21 @@ const Home = (props) => {
               <i className="fab fa-google-plus-g"></i>
             </a>
           </div>
-        </aside>
+        </div>
         <div className="earl-main-card">
-          <nav className="earl-nav">
-            <a href="#" className="earl-nav-link">
-              About
-            </a>
-            <a href="#" className="earl-nav-link">
-              Achievement
-            </a>
-            <a href="#" className="earl-nav-link">
-              Work Experience
-            </a>
-          </nav>
           <div className="earl-card-content">
-            <div className="earl-card-text">
-              <h1 className="earl-card-title">
+            <div className="earl-card-header">
+              <h1 className="earl-name">
                 IFTEKHAR
                 <br />
                 HOSSAIN
                 <br />
                 CHOWDHURY
               </h1>
-              <div className="earl-card-underline"></div>
-              <p className="earl-card-desc">
+              <div className="earl-card-goldline"></div>
+            </div>
+            <div className="earl-card-desc">
+              <p>
                 My job is very simple,
                 <br />
                 Lead the business development by
@@ -374,29 +365,31 @@ const Home = (props) => {
                 developing the people through work.
               </p>
             </div>
-            <div className="earl-card-image-wrap">
+          </div>
+          <div className="earl-card-image">
+            <div className="earl-img-frame">
+              {/* Replace with your image if available */}
               <div className="earl-card-image-border">
-                <img
-                  src={earlImg}
-                  alt="Profile"
-                  className="earl-card-image"
-                />
+                <img src={earlImg} alt="Profile" className="earl-card-image" />
               </div>
             </div>
           </div>
-          <div className="earl-card-nav-arrows">
-            <span className="earl-arrow earl-arrow-left">&#8592;</span>
-            <span className="earl-arrow earl-arrow-right">&#8594;</span>
+          <div className="earl-card-arrows">
+            <button className="earl-arrow-btn">
+              <i className="fas fa-chevron-left"></i>
+            </button>
+            <button className="earl-arrow-btn">
+              <i className="fas fa-chevron-right"></i>
+            </button>
           </div>
-          <div className="earl-card-dots">
-            <span className="earl-dot earl-dot-active"></span>
-            <span className="earl-dot"></span>
-            <span className="earl-dot"></span>
-            <span className="earl-dot"></span>
-          </div>
-          <div className="earl-card-goldbar"></div>
         </div>
-        <div className="earl-goldbar-side"></div>
+        <div className="earl-vertical-dots">
+          <span className="earl-dot active"></span>
+          <span className="earl-dot"></span>
+          <span className="earl-dot"></span>
+          <span className="earl-dot"></span>
+        </div>
+        <div className="earl-gold-bar"></div>
       </section>
     </div>
   );
