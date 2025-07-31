@@ -48,7 +48,7 @@
 }
 .donation-form-container {
   background: #2d3a4a;
-  color: #fff;
+  color: #fdf3f3;
   border-radius: 6px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
   padding: 40px 36px 32px 36px;
@@ -77,24 +77,27 @@
   font-size: 0.95rem;
   font-weight: 600;
   margin-bottom: 6px;
-  color: #e6e6e6;
+  color: #fffefe;
   letter-spacing: 0.5px;
 }
 .form-group input,
 .form-group select {
   background: transparent;
   border: none;
-  border-bottom: 2px solid #7e8fa3;
-  color: #fff;
+  border-bottom: 2px solid #fce278;
+  color: #0c0404;
   font-size: 1rem;
   padding: 7px 0 5px 0;
   outline: none;
   margin-bottom: 2px;
   transition: border-color 0.2s;
+  /* Fix for disabled pointer events from bubbles overlay */
+  position: relative;
+  z-index: 10;
 }
 .form-group input:focus,
 .form-group select:focus {
-  border-bottom: 2px solid #aee1c9;
+  border-bottom: 2px solid #ffcc00;
 }
 .expiration-fields {
   display: flex;
@@ -113,13 +116,13 @@
   margin-top: 18px;
 }
 .go-back-link {
-  color: #b7c7d6;
+  color: #ffcc00;
   text-decoration: underline;
   font-size: 1rem;
   cursor: pointer;
 }
 .process-payment-btn {
-  background: #aee1c9;
+  background: #ffcc00;
   color: #2d3a4a;
   font-weight: 700;
   font-size: 1.1rem;
@@ -127,19 +130,26 @@
   border-radius: 22px;
   padding: 10px 36px;
   cursor: pointer;
-  transition: background 0.2s;
+  transition: background 0.2s, color 0.2s;
+  position: relative;
+  z-index: 10;
 }
-.process-payment-btn:hover {
-  background: #8fd6b7;
+.process-payment-btn:hover,
+.process-payment-btn:focus {
+  background: #f50404;
+  color: #ffffff;
+  outline: none;
+}
+
+.form-group input::placeholder {
+  color: #252525 !important;
 }
 
 /* Footer Styles */
 .donation-footer {
-  background: #fff;
-  color: #2d3a4a;
+  background: rgb(3, 6, 23);
+  color: rgb(245, 178, 0);
   padding: 48px 0 32px 0;
-  border-top: 1px solid #e6e6e6;
-  margin-top: 60px;
 }
 .footer-content {
   display: flex;
@@ -166,11 +176,11 @@
 .footer-links,
 .footer-contact {
   font-size: 0.98rem;
-  color: #2d3a4a;
+  color: #f5f7f9;
   margin-bottom: 8px;
 }
 .footer-links a {
-  color: #2d3a4a;
+  color: #f9fbfe;
   text-decoration: none;
   display: block;
   margin-bottom: 6px;
@@ -180,25 +190,70 @@
 }
 .footer-social {
   display: flex;
-  gap: 16px;
+  gap: 0;
   margin-top: 8px;
+  background: none;
+  padding: 0;
 }
-.footer-social i {
-  font-size: 1.2rem;
-  color: #2d3a4a;
-  transition: color 0.2s;
+.social-button {
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  border: none;
+  background: linear-gradient(120deg, #833ab4, #fd1d1d, #fcb045);
+  position: relative;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  transition: 0.1s;
 }
-.footer-social i:hover {
-  color: #aee1c9;
+.social-button:first-child {
+  margin-left: 0;
 }
-.footer-hashtag {
-  font-family: "Permanent Marker", cursive, Arial, sans-serif;
-  font-size: 1.5rem;
-  color: #2d3a4a;
-  text-align: right;
-  margin-top: 18px;
-  letter-spacing: 1px;
+.social-button svg,
+.social-button i {
+  color: white !important;
+  width: 30px;
+  height: 40px;
+  z-index: 9;
+  font-size: 40px !important;
+  display: inline-block;
+  line-height: 1;
 }
+.social-button:nth-child(2) {
+  background: linear-gradient(120deg, #02ff2c, #008a12);
+}
+.social-button:nth-child(3) {
+  background: rgb(69, 187, 255);
+}
+.social-button:nth-child(4) {
+  background: rgb(255, 33, 33);
+}
+.social-button:nth-child(5) {
+  background: black;
+}
+.social-button:active {
+  transform: scale(0.85);
+}
+.social-button::before {
+  content: "";
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  background-color: #212121;
+  border-radius: 50px;
+  z-index: -1;
+  border: 0px solid rgba(255, 255, 255, 0.411);
+  transition: 0.4s;
+}
+.social-button:hover::before {
+  width: 0px;
+  height: 0px;
+}
+
 @media (max-width: 900px) {
   .donation-form-section {
     flex-direction: column;
@@ -212,5 +267,237 @@
   }
   .donation-hero-content {
     padding: 40px 10px 0 0;
+  }
+}
+
+/* Bubbles Animation Styles */
+.bubbles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 2;
+}
+.bubble {
+  position: absolute;
+  bottom: -20%;
+  display: block;
+  width: 4vw;
+  height: 4vw;
+  border-radius: 50%;
+  animation: float-up 20s ease-in infinite;
+}
+.bubble::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(245, 180, 0, 0.421);
+  border-radius: inherit;
+  animation: sway-left-to-right 20s ease-in-out alternate infinite;
+}
+
+/* Randomize bubble properties using nth-child selectors */
+.bubble:nth-child(1) {
+  left: 2vw;
+  width: 3vw;
+  height: 3vw;
+  animation-duration: 7s;
+}
+.bubble:nth-child(2) {
+  left: 6vw;
+  width: 5vw;
+  height: 5vw;
+  animation-duration: 9s;
+}
+.bubble:nth-child(3) {
+  left: 10vw;
+  width: 4vw;
+  height: 4vw;
+  animation-duration: 8s;
+}
+.bubble:nth-child(4) {
+  left: 14vw;
+  width: 6vw;
+  height: 6vw;
+  animation-duration: 10s;
+}
+.bubble:nth-child(5) {
+  left: 18vw;
+  width: 3.5vw;
+  height: 3.5vw;
+  animation-duration: 6s;
+}
+.bubble:nth-child(6) {
+  left: 22vw;
+  width: 4vw;
+  height: 4vw;
+  animation-duration: 7.5s;
+}
+.bubble:nth-child(7) {
+  left: 26vw;
+  width: 5vw;
+  height: 5vw;
+  animation-duration: 8.5s;
+}
+.bubble:nth-child(8) {
+  left: 30vw;
+  width: 3vw;
+  height: 3vw;
+  animation-duration: 9.5s;
+}
+.bubble:nth-child(9) {
+  left: 34vw;
+  width: 6vw;
+  height: 6vw;
+  animation-duration: 10.5s;
+}
+.bubble:nth-child(10) {
+  left: 38vw;
+  width: 4vw;
+  height: 4vw;
+  animation-duration: 6.5s;
+}
+.bubble:nth-child(11) {
+  left: 42vw;
+  width: 5vw;
+  height: 5vw;
+  animation-duration: 7.5s;
+}
+.bubble:nth-child(12) {
+  left: 46vw;
+  width: 3vw;
+  height: 3vw;
+  animation-duration: 8.5s;
+}
+.bubble:nth-child(13) {
+  left: 50vw;
+  width: 6vw;
+  height: 6vw;
+  animation-duration: 9.5s;
+}
+.bubble:nth-child(14) {
+  left: 54vw;
+  width: 4vw;
+  height: 4vw;
+  animation-duration: 10.5s;
+}
+.bubble:nth-child(15) {
+  left: 58vw;
+  width: 5vw;
+  height: 5vw;
+  animation-duration: 6.5s;
+}
+.bubble:nth-child(16) {
+  left: 62vw;
+  width: 3vw;
+  height: 3vw;
+  animation-duration: 7.5s;
+}
+.bubble:nth-child(17) {
+  left: 66vw;
+  width: 6vw;
+  height: 6vw;
+  animation-duration: 8.5s;
+}
+.bubble:nth-child(18) {
+  left: 70vw;
+  width: 4vw;
+  height: 4vw;
+  animation-duration: 9.5s;
+}
+.bubble:nth-child(19) {
+  left: 74vw;
+  width: 5vw;
+  height: 5vw;
+  animation-duration: 10.5s;
+}
+.bubble:nth-child(20) {
+  left: 78vw;
+  width: 3vw;
+  height: 3vw;
+  animation-duration: 6.5s;
+}
+.bubble:nth-child(21) {
+  left: 82vw;
+  width: 6vw;
+  height: 6vw;
+  animation-duration: 7.5s;
+}
+.bubble:nth-child(22) {
+  left: 86vw;
+  width: 4vw;
+  height: 4vw;
+  animation-duration: 8.5s;
+}
+.bubble:nth-child(23) {
+  left: 90vw;
+  width: 5vw;
+  height: 5vw;
+  animation-duration: 9.5s;
+}
+.bubble:nth-child(24) {
+  left: 94vw;
+  width: 3vw;
+  height: 3vw;
+  animation-duration: 10.5s;
+}
+/* ...repeat up to .bubble:nth-child(50) with left values spread across 0vw to 100vw... */
+
+/* Keyframes */
+@keyframes float-up {
+  0% {
+    transform: translateY(0);
+    opacity: 0.7;
+  }
+  10% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(
+      -150vh
+    ); /* further increase to ensure bubbles travel off screen */
+    opacity: 0;
+  }
+}
+@keyframes sway-left-to-right {
+  0% {
+    transform: translateX(-20px);
+  }
+  100% {
+    transform: translateX(20px);
+  }
+}
+@keyframes sway-right-to-left {
+  0% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateX(-20px);
+  }
+}
+
+@keyframes sway-left-to-right {
+  0% {
+    transform: translateX(-20px);
+  }
+  100% {
+    transform: translateX(20px);
+  }
+}
+@keyframes sway-right-to-left {
+  0% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateX(-20px);
   }
 }

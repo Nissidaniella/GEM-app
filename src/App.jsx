@@ -54,7 +54,13 @@ function App() {
   return (
     <div className="app">
       <HeroSection onNavigate={navigateTo} currentPage={currentPage} />
-      <div className="page-content-container">{renderPage()}</div>
+      <div
+        className={`page-content-container${
+          currentPage === "donation" ? " donation-page-content" : ""
+        }`}
+      >
+        {renderPage()}
+      </div>
       {showScrollTop && (
         <button
           className="scroll-to-top-btn"
