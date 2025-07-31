@@ -20,6 +20,7 @@ const NavBar = ({
   }}
 />
       </div>
+      
       <button className="mobile-menu-toggle" onClick={toggleMobileMenu}>
         <i className={mobileMenuOpen ? "fas fa-times" : "fas fa-bars"}></i>
       </button>

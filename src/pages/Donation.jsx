@@ -1,5 +1,6 @@
 import React from "react";
 import "../donation.css";
+import logo from "../images/logo.jpg";
 
 const Donation = () => {
   return (
@@ -240,13 +241,22 @@ const Donation = () => {
         style={{ position: "relative", zIndex: 3 }}
       >
         <div className="footer-content">
-          <div className="footer-col">
-            <div className="footer-title">
-              Godman Earl
-              <br />
-              Missions And Initiative (GEMINI)
-            </div>
+          <div className="footer-col footer-row"  >
+          <div className="nav-logo" onClick={() => handleNavigate("home")}>
+               <img
+          src={logo}
+          alt="Godman Earl Mission Logo"
+          style={{
+            height: 185,
+            width: "auto",
+            cursor: "pointer",
+          }}
+        />
+              </div>
+            
           </div>
+
+
           <div className="footer-col">
             <div className="footer-title">CONTACT US</div>
             <div className="footer-contact">
@@ -262,12 +272,12 @@ const Donation = () => {
           <div className="footer-col">
             <div className="footer-title">LINKS</div>
             <div className="footer-links">
-              <a href="/">Home</a>
-              <a href="/about">About</a>
-              <a href="/campaigns">Campaigns</a>
-              <a href="/blog">Blog</a>
-              <a href="/sign-up">Sign-up</a>
-            </div>
+ <a href="/">Home</a>
+<a href="/about">About</a>
+<a href="/campaigns">Campaigns</a>
+<a href="/blog">Blog</a>
+<a href="/sign-up">Sign-up</a>
+</div>
           </div>
           <div className="footer-col">
             <div className="footer-title">FOLLOW US</div>
@@ -326,6 +336,7 @@ const Donation = () => {
             </div>
           </div>
         </div>
+        
       </footer>
     </div>
   );

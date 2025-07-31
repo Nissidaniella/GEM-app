@@ -391,6 +391,8 @@ const Home = (props) => {
         </div>
         <div className="earl-gold-bar"></div>
       </section>
+
+      
     </div>
   );
 };

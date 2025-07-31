@@ -168,11 +168,14 @@
 .footer-col:last-child {
   margin-right: 0;
 }
-.footer-title {
-  font-weight: 700;
-  font-size: 1.1rem;
-  margin-bottom: 12px;
+
+.footer-row .nav-logo{
+  padding: 1px;
+  background-color: #fcb045;
+  width: 187px;
+  height: 187px;
 }
+
 .footer-links,
 .footer-contact {
   font-size: 0.98rem;

@@ -8,6 +8,7 @@ import campaignSchool from "../images/campaign-school.png";
 import campaignPrayer from "../images/campaign-prayer.png";
 import campaignVolunteer from "../images/campaign-volunteer.png";
 import campaignDonate from "../images/campaign-donate.png";
+import footerSection from "../components/footer-section.jsx";
 
 const campaignData = [
   {
@@ -215,6 +216,9 @@ const Campaigns = ({ handleNavigate }) => {
           </div>
         </div>
       )}
+
+      <footerSection/>
+
     </div>
   );
 };
