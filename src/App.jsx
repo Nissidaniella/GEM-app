@@ -6,6 +6,7 @@ import About from "./pages/About";
 import Blog from "./pages/Blog";
 import Donation from "./pages/Donation";
 import SignUp from "./pages/Sign-up";
+import FooterSection from "./components/footer-section";
 import "./App.css";
 
 function App() {
@@ -70,6 +71,7 @@ function App() {
           <i className="fas fa-arrow-up"></i>
         </button>
       )}
+      <FooterSection onNavigate={navigateTo} />
     </div>
   );
 }
