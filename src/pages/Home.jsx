@@ -10,6 +10,7 @@ import praykImg from "../images/prayk.jpg";
 import coinsImg from "../images/coins.jpg";
 import earlImg from "../images/earl1.jpg";
 
+
 const Home = (props) => {
   // Accept handleNavigate from props or fallback to window.location.hash
   const handleNavigate =
@@ -392,7 +393,7 @@ const Home = (props) => {
         <div className="earl-gold-bar"></div>
       </section>
 
-      
+     
     </div>
   );
 };

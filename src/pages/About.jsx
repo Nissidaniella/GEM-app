@@ -1,7 +1,7 @@
-import React from "react";
 import "../PageStyles.css";
 
-const About = () => {
+
+const About = ({ handleNavigate }) => {
   return (
     <div className="page-container">
       <div className="page-content">
@@ -99,6 +99,8 @@ const About = () => {
           </div>
         </div>
       </div>
+
+     
     </div>
   );
 };

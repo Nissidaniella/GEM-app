@@ -1,7 +1,8 @@
 import React from "react";
 import "../PageStyles.css";
+import FooterSection from "../components/footer-section.jsx";
 
-const Blog = () => {
+const Blog = ({ handleNavigate }) => {
   const blogPosts = [
     {
       id: 1,
