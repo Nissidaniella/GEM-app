@@ -28,12 +28,16 @@ const BubbleOverlay = ({ width = 420, height = 110 }) => (
   >
     {/* Make sure you have the required CSS keyframes and .bubble styles in your CSS file! */}
     {Array.from({ length: BUBBLE_COUNT }).map((_, i) => {
-      const left = `${randomRange(0, width)}px`;
-      const radius = `${randomRange(width * 0.02, width * 0.12)}px`;
-      const floatDuration = `${randomRange(6, 12)}s`;
-      const swayDuration = `${randomRange(4, 6)}s`;
-      const floatDelay = `${randomRange(0, 4)}s`;
-      const swayDelay = `${randomRange(0, 4)}s`;
+      const left = `${randomRange(-20, width + 20)}px`; // Even more extended range
+      const bottom = `${randomRange(-150, 50)}%`; // Much wider vertical spread
+      const radius = `${randomRange(width * 0.015, width * 0.15)}px`; // More size variety
+      const floatDuration = `${randomRange(12, 35)}s`; // Much longer, more varied durations
+      const swayDuration = `${randomRange(8, 25)}s`; // Much longer sway durations
+
+      // Create completely random timing with much wider spreads
+      const floatDelay = `${randomRange(0, 60)}s`; // Spread over 60 seconds
+      const swayDelay = `${randomRange(0, 45)}s`; // Independent sway timing
+
       const swayType = sample(swayTypes);
 
       return (
@@ -46,7 +50,7 @@ const BubbleOverlay = ({ width = 420, height = 110 }) => (
             height: radius,
             animation: `float-up ${floatDuration} ${floatDelay} ease-in infinite`,
             position: "absolute",
-            bottom: "-75%",
+            bottom: bottom,
             borderRadius: "50%",
             display: "block",
             overflow: "hidden",
