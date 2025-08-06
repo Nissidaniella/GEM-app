@@ -33,7 +33,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px 60px;
-  z-index: 10;
+  z-index: 1000; /* Increased navbar z-index */
   transition: padding 0.3s ease;
   background-color: rgb(3, 6, 23);
 }
@@ -63,7 +63,7 @@
   color: white;
   font-size: 1.8rem;
   cursor: pointer;
-  z-index: 1001; /* Ensure it's above other nav elements */
+  z-index: 1005; /* Increased z-index to stay above form content */
 }
 
 .nav-menu {
@@ -109,7 +109,7 @@
 }
 
 .donate-btn {
-  background-color:#FEB900 ;
+  background-color: #feb900;
   color: white;
   border: none;
   padding: 12px 30px;
@@ -145,7 +145,7 @@
   text-transform: lowercase;
   font-size: larger;
   font-weight: 700;
-  color: #FEB900;
+  color: #feb900;
 
   font-family: italic;
 }
@@ -246,8 +246,8 @@
 
 .learn-more-btn {
   background-color: transparent;
-  color:#FEB900 ;
-  border: 2px solid #FEB900;
+  color: #feb900;
+  border: 2px solid #feb900;
   padding: 15px 40px;
   font-size: 0.9rem;
   cursor: pointer;
@@ -273,7 +273,7 @@
   width: 50px;
   height: 54px;
   border-radius: 50%;
-  background: #FEB900;
+  background: #feb900;
   color: #222;
   border: none;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
@@ -328,7 +328,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   .navbar {
     padding: 15px 20px;
     flex-wrap: wrap; /* Allow items to wrap if needed */
@@ -339,11 +339,37 @@
     display: flex;
     justify-content: space-between; /* Pushes logo left, toggle right */
     align-items: center;
+    position: relative;
   }
 
   .mobile-menu-toggle {
     display: block; /* Show hamburger icon */
-    order: 2; /* Ensure toggle is after logo if they are on same line */
+    order: 3; /* Ensure toggle is after donate button */
+    padding: 3px 7px;
+    font-size: 20px;
+    z-index: 1005; /* Increased z-index to stay above form content */
+    position: relative;
+  }
+
+  .nav-right {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    z-index: 15; /* Increased z-index but still below toggle */
+    gap: 0;
+    padding-top: 0;
+    justify-content: center;
+  }
+
+  .donate-btn {
+    padding: 12px 50px;
+    font-size: 0.75rem;
+    width: auto;
+    margin: 0;
+    font-weight: 600;
+    white-space: nowrap;
   }
 
   .nav-menu {
@@ -382,13 +408,6 @@
     display: none; /* Hide underline effect on mobile */
   }
 
-  .nav-right {
-    /* Decide how to handle nav-right on mobile. Hide some, stack others, or move to menu */
-    gap: 15px;
-    padding-top: 10px; /* Add some space if it wraps below nav-left */
-    width: 100%;
-    justify-content: center; /* Center items if they remain visible */
-  }
   .nav-right .social-icon,
   .nav-right .search-icon,
   .nav-right .user-icon {
@@ -396,12 +415,6 @@
   }
   .nav-right .phone-number {
     font-size: 0.8rem;
-  }
-  .donate-btn {
-    padding: 10px 20px;
-    font-size: 0.8rem;
-    width: auto; /* Allow button to size to content or be full-width */
-    margin: 10px auto 0; /* Center button if it's on its own line */
   }
 
   .hero-title {
@@ -423,9 +436,22 @@
   }
 }
 
+@media (max-width: 568px) {
+  .donate-btn {
+    padding: 8px 20px;
+    font-size: 0.75rem;
+  }
+
+  .nav-logo {
+    background-color: #feb900;
+    height: 49px;
+  }
+}
+
 @media (max-width: 480px) {
   .nav-logo {
     font-size: 1.8rem;
+    background-color: #ffcc00;
   }
   .nav-logo::before {
     width: 15px;
