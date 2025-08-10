@@ -75,7 +75,7 @@ const About = ({ handleNavigate }) => {
 
         <div className="content-section">
           <h2>Our Team</h2>
-          <div className="team-grid">
+          <div className="team-grid team-grid-8">
             <div className="team-member">
               <div className="member-photo placeholder-img"></div>
               <h3>Jane Doe</h3>
@@ -95,6 +95,26 @@ const About = ({ handleNavigate }) => {
               <div className="member-photo placeholder-img"></div>
               <h3>Michael Chen</h3>
               <p className="member-title">CTO</p>
+            </div>
+            <div className="team-member">
+              <div className="member-photo placeholder-img"></div>
+              <h3>Sarah Lee</h3>
+              <p className="member-title">Lead Designer</p>
+            </div>
+            <div className="team-member">
+              <div className="member-photo placeholder-img"></div>
+              <h3>David Kim</h3>
+              <p className="member-title">Marketing Manager</p>
+            </div>
+            <div className="team-member">
+              <div className="member-photo placeholder-img"></div>
+              <h3>Priya Patel</h3>
+              <p className="member-title">Community Lead</p>
+            </div>
+            <div className="team-member">
+              <div className="member-photo placeholder-img"></div>
+              <h3>Alex Brown</h3>
+              <p className="member-title">Product Manager</p>
             </div>
           </div>
         </div>
