@@ -301,6 +301,162 @@
   font-size: 0.9rem;
 }
 
+/* Mosaic Team Grid Styles for About Page */
+.team-mosaic-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 220px);
+  gap: 0;
+  width: 100%;
+  max-width: 1100px;
+  margin: 40px auto 60px auto;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.mosaic-tile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.tile-bg {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 18px;
+}
+
+.tile-futuro {
+  background: linear-gradient(120deg, #3ec6e0 0%, #ffcc00 60%, #f44336 100%);
+  font-size: 2.6rem;
+  letter-spacing: 0.1em;
+  line-height: 1.1;
+  text-align: left;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.tile-quote1 {
+  background: linear-gradient(135deg, #000000 0%, #ffcc00 0%, #f902ed 100%);
+  color: #fff;
+  font-size: 1.15rem;
+  line-height: 1.3;
+}
+
+.tile-welcome {
+  background: linear-gradient(120deg, #02f6fa 0%, #f97999 0%, #43bfae 100%);
+  color: #fff;
+  font-size: 1.15rem;
+  line-height: 1.3;
+}
+
+.tile-refugio {
+  background: linear-gradient(120deg, #674fff 0%, #ff67eb 100%);
+  color: #faf7f7;
+  font-size: 1.15rem;
+  line-height: 1.3;
+}
+
+.tile-bg {
+  /* Add abstract shapes with pseudo-elements if desired */
+}
+
+.tile-img {
+  background: #fff;
+  padding: 0;
+}
+
+.mosaic-photo {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 0;
+}
+
+.tile-person1 {
+  background: #43bfae;
+}
+.tile-person2 {
+  background: #ffbfae;
+}
+.tile-person3 {
+  background: #ffe082;
+}
+.tile-person4 {
+  background: #b3e5fc;
+}
+.tile-person6 {
+  background: #ffe082;
+}
+
+.tile-large {
+  font-size: 2.6rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  line-height: 1.1;
+  text-align: left;
+  color: #fff;
+}
+
+.tile-text {
+  display: block;
+  width: 100%;
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: inherit;
+}
+
+.tile-gemini {
+  background: linear-gradient(120deg, #3ec6e0 0%, #ffcc00 60%, #f44336 100%);
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gemini-grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+}
+.gemini-letter {
+  font-size: 3.2rem;
+  font-weight: 900;
+  color: #fff;
+  letter-spacing: 0.08em;
+  line-height: 1.05;
+  margin-bottom: 0.1em;
+  font-family: "Montserrat", "Arial", sans-serif;
+  text-align: center;
+  width: 100%;
+  display: block;
+}
+@media (max-width: 900px) {
+  .gemini-letter {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 600px) {
+  .gemini-letter {
+    font-size: 1.2rem;
+  }
+}
+
 /* Blog Page Styles */
 .blog-filter-bar {
   display: flex;
@@ -755,6 +911,45 @@
 
 .faq-item p {
   color: #666;
+}
+
+/* Mosaic Grid Styles for About Page */
+.mosaic-5col {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 220px);
+  gap: 0;
+  width: 100%;
+  max-width: 1400px;
+  margin: 40px auto 60px auto;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.tile-extra1 {
+  background: linear-gradient(120deg, #ffcc00 0%, #43bfae 60%, #f44336 100%);
+  color: #fff;
+  font-size: 1.15rem;
+  line-height: 1.3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 18px;
+}
+
+@media (max-width: 1200px) {
+  .mosaic-5col {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 180px);
+  }
+}
+@media (max-width: 600px) {
+  .mosaic-5col {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(10, 120px);
+  }
 }
 
 /* Responsive Adjustments */

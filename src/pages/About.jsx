@@ -1,6 +1,5 @@
 import "../PageStyles.css";
 
-
 const About = ({ handleNavigate }) => {
   return (
     <div className="page-container">
@@ -74,53 +73,73 @@ const About = ({ handleNavigate }) => {
         </div>
 
         <div className="content-section">
-          <h2>Our Team</h2>
-          <div className="team-grid team-grid-8">
-            <div className="team-member">
-              <div className="member-photo placeholder-img"></div>
-              <h3>Jane Doe</h3>
-              <p className="member-title">CEO & Founder</p>
+          <div className="team-mosaic-grid mosaic-5col">
+            <div className="mosaic-tile tile-bg tile-gemini">
+              <div className="gemini-grid">
+                <span className="gemini-letter">GE</span>
+                <span className="gemini-letter">MI</span>
+                <span className="gemini-letter">NI</span>
+              </div>
             </div>
-            <div className="team-member">
-              <div className="member-photo placeholder-img"></div>
-              <h3>John Smith</h3>
-              <p className="member-title">COO</p>
+            <div className="mosaic-tile tile-img tile-person1">
+              <div
+                className="mosaic-photo"
+                style={{ backgroundImage: "url('/src/images/school.jpg')" }}
+              ></div>
             </div>
-            <div className="team-member">
-              <div className="member-photo placeholder-img"></div>
-              <h3>Emily Johnson</h3>
-              <p className="member-title">Head of Partnerships</p>
+            <div className="mosaic-tile tile-bg tile-quote1">
+              <span className="tile-text">
+                A global mission for positive change.
+              </span>
             </div>
-            <div className="team-member">
-              <div className="member-photo placeholder-img"></div>
-              <h3>Michael Chen</h3>
-              <p className="member-title">CTO</p>
+            <div className="mosaic-tile tile-img tile-person2">
+              <div
+                className="mosaic-photo"
+                style={{ backgroundImage: "url('/src/images/help.jpg')" }}
+              ></div>
             </div>
-            <div className="team-member">
-              <div className="member-photo placeholder-img"></div>
-              <h3>Sarah Lee</h3>
-              <p className="member-title">Lead Designer</p>
+            <div className="mosaic-tile tile-bg tile-welcome">
+              <span className="tile-text">
+                Change starts with one and grows worldwide.
+              </span>
             </div>
-            <div className="team-member">
-              <div className="member-photo placeholder-img"></div>
-              <h3>David Kim</h3>
-              <p className="member-title">Marketing Manager</p>
+            <div className="mosaic-tile tile-img tile-person3">
+              <div
+                className="mosaic-photo"
+                style={{ backgroundImage: "url('/src/images/grouphands.jpg')" }}
+              ></div>
             </div>
-            <div className="team-member">
-              <div className="member-photo placeholder-img"></div>
-              <h3>Priya Patel</h3>
-              <p className="member-title">Community Lead</p>
+            <div className="mosaic-tile tile-bg tile-refugio">
+              <span className="tile-text">
+                Its vision is access to resources for all.
+              </span>
             </div>
-            <div className="team-member">
-              <div className="member-photo placeholder-img"></div>
-              <h3>Alex Brown</h3>
-              <p className="member-title">Product Manager</p>
+            <div className="mosaic-tile tile-img tile-person4">
+              <div
+                className="mosaic-photo"
+                style={{ backgroundImage: "url('/src/images/fist.jpg')" }}
+              ></div>
+            </div>
+            <div className="mosaic-tile tile-bg tile-extra1">
+              <span className="tile-text">
+                It builds impact through excellence and integrity.
+              </span>
+            </div>
+            <div className="mosaic-tile tile-img tile-person5">
+              <div
+                className="mosaic-photo"
+                style={{ backgroundImage: "url('/src/images/heart.jpg')" }}
+              ></div>
+            </div>
+            <div className="mosaic-tile tile-img tile-person6">
+              <div
+                className="mosaic-photo"
+                style={{ backgroundImage: "url('/src/images/kids.jpg')" }}
+              ></div>
             </div>
           </div>
         </div>
       </div>
-
-     
     </div>
   );
 };
