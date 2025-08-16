@@ -63,55 +63,7 @@ const Home = (props) => {
           </div>
         </div>
       </section>
-      {/* <div className="page-content">
-        <h1 className="page-title">Home Page</h1>
-        <p className="page-description">
-          Welcome to Fundor! We help connect people with causes that matter.
-        </p>
-        <div className="content-section">
-          <h2>Featured Campaigns</h2>
-          <div className="feature-cards">
-            <div className="card">
-              <div className="card-img placeholder-img"></div>
-              <h3>Education for All</h3>
-              <p>
-                Help provide education resources to underserved communities.
-              </p>
-              <div className="progress-bar">
-                <div className="progress" style={{ width: "75%" }}></div>
-              </div>
-              <div className="card-footer">
-                <span>$15,000 raised</span>
-                <span>Goal: $20,000</span>
-              </div>
-            </div>
-            <div className="card">
-              <div className="card-img placeholder-img"></div>
-              <h3>Clean Water Initiative</h3>
-              <p>Support access to clean drinking water in rural areas.</p>
-              <div className="progress-bar">
-                <div className="progress" style={{ width: "45%" }}></div>
-              </div>
-              <div className="card-footer">
-                <span>$9,000 raised</span>
-                <span>Goal: $20,000</span>
-              </div>
-            </div>
-            <div className="card">
-              <div className="card-img placeholder-img"></div>
-              <h3>Healthcare Access</h3>
-              <p>Help provide medical care to those who need it most.</p>
-              <div className="progress-bar">
-                <div className="progress" style={{ width: "60%" }}></div>
-              </div>
-              <div className="card-footer">
-                <span>$12,000 raised</span>
-                <span>Goal: $20,000</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> */}
+      
 
       <section className="impact-section">
         <div className="impact-inner">
@@ -236,22 +188,6 @@ const Home = (props) => {
         </div>
       </section>
 
-      <div className="content-section">
-        <h2>Our Story</h2>
-        <div className="about-content">
-          <div className="about-image placeholder-img"></div>
-          <div className="about-text">
-            <p>
-              Fundor was established in 2020 with a vision to democratize
-              fundraising and make it accessible to everyone. Our founders
-              recognized the need for a platform that could connect donors
-              directly with causes they care about, removing barriers and
-              reducing overhead costs.
-            </p>
-          </div>
-        </div>
-      </div>
-
       <section className="gem-section">
         <div className="gem-inner">
           <div className="gem-left">
@@ -322,76 +258,7 @@ const Home = (props) => {
         </div>
       </section>
 
-      {/* EARL SECTION - stylized profile card */}
-      <section className="earl-section">
-        <div className="earl-sidebar">
-          <div className="earl-logo"></div>
-          <div className="earl-sidebar-labels">
-            <span className="earl-sidebar-label">Alpha</span>
-            <span className="earl-sidebar-label">Leader</span>
-          </div>
-          <div className="earl-sidebar-socials">
-            <a href="#" className="earl-social">
-              <i className="fab fa-facebook-f"></i>
-            </a>
-            <a href="#" className="earl-social">
-              <i className="fab fa-linkedin-in"></i>
-            </a>
-            <a href="#" className="earl-social">
-              <i className="fab fa-instagram"></i>
-            </a>
-            <a href="#" className="earl-social">
-              <i className="fab fa-google-plus-g"></i>
-            </a>
-          </div>
-        </div>
-        <div className="earl-main-card">
-          <div className="earl-card-content">
-            <div className="earl-card-header">
-              <h1 className="earl-name">
-                IFTEKHAR
-                <br />
-                HOSSAIN
-                <br />
-                CHOWDHURY
-              </h1>
-              <div className="earl-card-goldline"></div>
-            </div>
-            <div className="earl-card-desc">
-              <p>
-                My job is very simple,
-                <br />
-                Lead the business development by
-                <br />
-                developing the people through work.
-              </p>
-            </div>
-          </div>
-          <div className="earl-card-image">
-            <div className="earl-img-frame">
-              {/* Replace with your image if available */}
-              <div className="earl-card-image-border">
-                <img src={earlImg} alt="Profile" className="earl-card-image" />
-              </div>
-            </div>
-          </div>
-          <div className="earl-card-arrows">
-            <button className="earl-arrow-btn">
-              <i className="fas fa-chevron-left"></i>
-            </button>
-            <button className="earl-arrow-btn">
-              <i className="fas fa-chevron-right"></i>
-            </button>
-          </div>
-        </div>
-        <div className="earl-vertical-dots">
-          <span className="earl-dot active"></span>
-          <span className="earl-dot"></span>
-          <span className="earl-dot"></span>
-          <span className="earl-dot"></span>
-        </div>
-        <div className="earl-gold-bar"></div>
-      </section>
+    
 
      
     </div>
