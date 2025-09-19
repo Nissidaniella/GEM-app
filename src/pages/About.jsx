@@ -5,7 +5,7 @@ import patch2 from "../images/patch2.PNG";
 
 const About = ({ handleNavigate }) => {
   return (
-    <div className="page-container">
+    <div className="page-container about-page">
       <div className="page-content">
         <h1 className="page-title">About GEMINI</h1>
         <p className="page-description">
@@ -81,6 +81,79 @@ const About = ({ handleNavigate }) => {
           </div>
         </div>
 
+
+         <section className="gem-section">
+          <div className="gem-inner">
+            <div
+              className="gem-cards about-page"
+              style={{ justifyContent: "center", display: "flex" }}
+            >
+              <div className="gem-card">
+                <div className="card1">
+<div className="gem-card-icon gem-card-icon-yellow">
+                  <MissionIcon />
+                </div>
+                <div className="gem-card-title">Our Mission</div>
+
+                </div>
+                
+                <div className="gem-card-desc">
+                  Empower individuals and communities to reach their full
+                  potential through education, support, and opportunity.  Empower individuals and communities to reach their full
+                  potential through education, support, and opportunity.
+                  <br></br>
+                  <br></br>
+                   Empower individuals and communities to reach their full
+                  potential through education, support, and opportunity.
+                   Empower individuals and communities to reach their full
+                  potential through education, support, and opportunity.
+
+                  
+                </div>
+              </div>
+              <div className="gem-card gem-card-active">
+                <div className="card1">
+
+                     <div className="gem-card-icon gem-card-icon-yellow">
+                  <VisionIcon />
+                </div>
+                <div className="gem-card-title">Our Vision</div>
+                </div>
+            
+                <div className="gem-card-desc">
+                  A world where everyone has access to the resources, care, and
+                  encouragement they need to thrive.
+                </div>
+              </div>
+
+
+              <div className="gem-card">
+
+                <div className="card1">
+<div className="gem-card-icon gem-card-icon-yellow">
+                  <ValuesIcon />
+                </div>
+                <div className="gem-card-title">Our Values</div>
+
+                </div>
+                
+
+
+
+
+                <div className="gem-card-desc">
+                  Compassion, integrity, and unity guide every action as we work
+                  together for lasting impact.
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+       
+
+      
+
         <div className="content-section">
           <h2
             style={{
@@ -102,11 +175,23 @@ const About = ({ handleNavigate }) => {
               marginLeft: "500px",
             }}
           />
-          <div className="about-content">
+
+
+    
+          <div className="about-content earl">
             <div
               className="about-image placeholder-img"
               style={{ border: "2px solid #ffcc00", padding: "40px" }}
             ></div>
+
+
+
+
+
+
+
+
+            
             <div className="about-text" style={{ position: "relative" }}>
               <h1 style={{ marginTop: "15px",}}>Rev. Dr. Earl Godman</h1>{" "}
               <br></br>
@@ -163,45 +248,137 @@ const About = ({ handleNavigate }) => {
           </div>
         </div>
 
-        <section className="gem-section ">
-          <div className="gem-inner">
-            <div
-              className="gem-cards about-page"
-              style={{ justifyContent: "center", display: "flex" }}
-            >
-              <div className="gem-card">
-                <div className="gem-card-icon gem-card-icon-yellow">
-                  <MissionIcon />
-                </div>
-                <div className="gem-card-title">Our Mission</div>
-                <div className="gem-card-desc">
-                  Empower individuals and communities to reach their full
-                  potential through education, support, and opportunity.
-                </div>
+ <br></br>
+        <br></br>
+        <br></br>
+
+ <h1 className="page-description">
+          Have questions or need assistance? Reach out to our team and we'll be
+          happy to help.
+        </h1>
+
+  <div className="contact-container">
+          <div className="contact-info">
+            <div className="info-item">
+              <div className="info-icon">
+                <i className="fas fa-map-marker-alt"></i>
               </div>
-              <div className="gem-card gem-card-active">
-                <div className="gem-card-icon gem-card-icon-yellow">
-                  <VisionIcon />
-                </div>
-                <div className="gem-card-title">Our Vision</div>
-                <div className="gem-card-desc">
-                  A world where everyone has access to the resources, care, and
-                  encouragement they need to thrive.
-                </div>
+              <div className="info-content">
+                <h3>Our Location</h3>
+                <p>123 Charity Lane</p>
+                <p>Suite 456</p>
+                <p>New York, NY 10001</p>
               </div>
-              <div className="gem-card">
-                <div className="gem-card-icon gem-card-icon-yellow">
-                  <ValuesIcon />
-                </div>
-                <div className="gem-card-title">Our Values</div>
-                <div className="gem-card-desc">
-                  Compassion, integrity, and unity guide every action as we work
-                  together for lasting impact.
-                </div>
+            </div>
+
+            <div className="info-item">
+              <div className="info-icon">
+                <i className="fas fa-phone-alt"></i>
+              </div>
+              <div className="info-content">
+                <h3>Phone</h3>
+                <p>+(84) 1800 333 555</p>
+                <p>Mon - Fri: 9:00 AM - 6:00 PM</p>
+              </div>
+            </div>
+
+            <div className="info-item">
+              <div className="info-icon">
+                <i className="fas fa-envelope"></i>
+              </div>
+              <div className="info-content">
+                <h3>Email</h3>
+                <p>info@fundor.org</p>
+                <p>support@fundor.org</p>
+              </div>
+            </div>
+
+            <div className="info-item">
+              <div className="info-icon">
+                <i className="fas fa-clock"></i>
+              </div>
+              <div className="info-content">
+                <h3>Office Hours</h3>
+                <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                <p>Saturday: 10:00 AM - 2:00 PM</p>
+                <p>Sunday: Closed</p>
               </div>
             </div>
           </div>
-        </section>
+
+          <div className="contact-form-container">
+            <h2>Send Us a Message</h2>
+            <form className="contact-form">
+              <div className="form-row">
+                <div className="form-group">
+                  <label htmlFor="name">Your Name</label>
+                  <input type="text" id="name" placeholder="Enter your name" />
+                </div>
+                <div className="form-group">
+                  <label htmlFor="email">Your Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                  />
+                </div>
+              </div>
+
+              <div className="form-group">
+                <label htmlFor="subject">Subject</label>
+                <input type="text" id="subject" placeholder="Enter subject" />
+              </div>
+
+              <div className="form-group">
+                <label htmlFor="message">Message</label>
+                <textarea
+                  id="message"
+                  rows="6"
+                  placeholder="Type your message here..."
+                ></textarea>
+              </div>
+
+              <button type="submit" className="submit-btn">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+
+         <div className="faq-section">
+          <h2>Frequently Asked Questions</h2>
+          <div className="faq-container">
+            <div className="faq-item">
+              <h3>How quickly will I receive a response?</h3>
+              <p>
+                We aim to respond to all inquiries within 24-48 business hours.
+              </p>
+            </div>
+            <div className="faq-item">
+              <h3>Can I visit your office in person?</h3>
+              <p>
+                Yes, we welcome visitors during our office hours. We recommend
+                scheduling an appointment in advance.
+              </p>
+            </div>
+            <div className="faq-item">
+              <h3>How can I report a technical issue?</h3>
+              <p>
+                Please email support@fundor.org with details of the issue,
+                including screenshots if possible.
+              </p>
+            </div>
+            <div className="faq-item">
+              <h3>Do you offer partnership opportunities?</h3>
+              <p>
+                Yes! Please reach out to partnerships@fundor.org to discuss
+                potential collaboration.
+              </p>
+            </div>
+          </div>
+        </div>
+       
+
       </div>
     </div>
   );

@@ -1,3 +1,5 @@
+/* Force .gem-card to display in a column for About page */
+
 @media (max-width: 1258px) {
   .article-section {
     flex-direction: column-reverse !important;
@@ -690,9 +692,12 @@ button:hover,
 }
 /* Larger cards for About page value section */
 .about-page .gem-card {
-  width: 300px;
+  width: 100%;
   min-width: 260px;
   height: 300px;
+  border-radius: 0px;
+  display: flex;
+  flex-direction: row;
 }
 /* Page Styles for all dummy pages */
 
@@ -731,6 +736,17 @@ button:hover,
 }
 
 /* Responsive styles for About page */
+
+@media (max-width: 1090px) {
+  .earl .placeholder-img {
+    height: 480px !important;
+  }
+
+  .earl .about-text h1 {
+    font-size: 2.9rem;
+  }
+}
+
 @media (max-width: 1024px) {
   .page-content {
     width: 98%;
@@ -752,18 +768,28 @@ button:hover,
   .about-content {
     flex-direction: column;
     align-items: center;
+    gap: 5px;
   }
   .about-image {
-    margin: 0 auto 20px auto;
+    margin: 20px;
     width: 80vw !important;
     max-width: 350px;
+    min-height: 380px;
+    min-width: 250px !important;
     height: auto !important;
   }
   .about-text {
-    width: 95vw !important;
-    max-width: 500px;
+    width: 80vw !important;
+    /* max-width: 00px; */
     margin: 0 auto;
     font-size: 1rem;
+  }
+
+  .about-text h1 {
+    font-size: 3.8rem !important;
+    min-width: 100px !important;
+    max-width: 600px;
+    margin-top: -20px !important;
   }
 }
 
@@ -787,24 +813,26 @@ button:hover,
   .about-content {
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
   }
-  .about-image {
-    width: 90vw !important;
-    max-width: 250px;
-    padding: 15px !important;
-  }
+
   .about-text {
-    width: 98vw !important;
-    max-width: 98vw;
     font-size: 0.98rem;
-    padding: 0 2vw;
   }
+
+  .about-text h1 {
+    font-size: 3.3rem !important;
+    min-width: 100px !important;
+    max-width: 600px;
+    margin-top: -20px !important;
+  }
+
   .gem-cards.about-page {
     flex-direction: column;
     align-items: center;
     gap: 12px;
   }
+
   .gem-card {
     width: 95vw !important;
     max-width: 98vw;
@@ -822,6 +850,8 @@ button:hover,
   }
   .about-image {
     padding: 8px !important;
+    height: 350px !important;
+    width: 320px !important;
   }
   .about-text {
     font-size: 0.92rem;
@@ -832,6 +862,100 @@ button:hover,
     width: 99vw !important;
     max-width: 99vw;
   }
+}
+
+@media (max-width: 455px) {
+  .about-image {
+    height: 20px !important;
+    max-width: 280px !important;
+    min-width: 180px !important;
+  }
+
+  .about-text h1 {
+    font-size: 2.5rem !important;
+    min-width: 100px !important;
+    max-width: 600px;
+    margin-top: -20px !important;
+  }
+}
+
+@media (max-width: 390px) {
+  .earl .about-text p {
+    width: 260px;
+    margin: 0 auto;
+    font-size: 0.85rem !important;
+    line-height: 1.5 !important;
+    margin-bottom: 12px !important;
+  }
+  .earl .about-image {
+    max-width: 230px !important;
+    min-width: 180px !important ;
+    margin: 0 auto;
+    top: 10px !important;
+    height: 13px !important;
+    padding: 136px !important;
+    background-size: cover !important;
+    background-position: center !important;
+  }
+
+  .earl .about-text h1 {
+    margin-bottom: -19px !important;
+    margin-top: 20px !important;
+    width: 270px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 375px) {
+  .earl .about-text p {
+    width: 220px;
+    margin: 0 auto;
+    font-size: 0.75rem !important;
+    line-height: 1.4 !important;
+    margin-bottom: 12px !important;
+  }
+  .earl .about-image {
+    max-width: 170px !important;
+    min-width: 150px !important ;
+    margin: 0 auto;
+    top: 10px !important;
+    height: 13px !important;
+    padding: 100px !important;
+    background-size: cover !important;
+    background-position: center !important;
+  }
+
+  .earl .about-text h1 {
+    margin-bottom: -19px !important;
+    margin-top: 20px !important;
+    width: 220px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 368px) {
+  .about-content {
+    
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+  }
+  .about-content .about-image,
+  .about-content .about-text {
+    margin: 0 auto !important;
+    width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+    .about-content .about-image {
+      padding: 100px !important;
+    }
 }
 
 .content-section h2 {
@@ -1161,10 +1285,6 @@ button:hover,
   line-height: 1.3;
 }
 
-.tile-bg {
-  /* Add abstract shapes with pseudo-elements if desired */
-}
-
 .tile-img {
   background: transparent;
   padding: 0;
@@ -1235,6 +1355,90 @@ button:hover,
   .gemini-letter {
     font-size: 1.2rem;
   }
+}
+
+@media (max-width: 1030px) {
+  .about-page .gem-section {
+    background-color: transparent !important;
+    padding: 0px !important;
+  }
+
+  .about-page .gem-card {
+    margin: 0px !important;
+  }
+}
+
+@media (max-width: 745px) {
+  .about-page .gem-card-desc {
+    font-size: 0.8rem;
+  }
+
+  .about-page .gem-card-icon {
+    font-size: 1.5rem;
+    width: 50px;
+  }
+
+  .about-page .gem-card-title {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 590px) {
+  .about-page .gem-card-title {
+    font-size: 1rem;
+  }
+
+  .about-page .gem-card-icon {
+    font-size: 1.2rem;
+    width: 40px;
+  }
+
+  .about-page .gem-card-desc {
+    font-size: 0.8rem;
+  }
+
+  .about-page .gem-card {
+    gap: 0px !important;
+
+    margin: 10px !important;
+
+    display: flex !important;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+
+  .about-page .gem-card-icon {
+    font-size: 1.5rem;
+    width: 80px;
+    margin-top: 20px;
+  }
+}
+
+.about-page .gem-section {
+  background-color: none !important;
+  padding: 0px !important;
+}
+
+.gem-cards.about-page {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  width: 100% !important;
+  gap: 0px !important;
+}
+
+.about-page .gem-card {
+  border: none !important;
+  display: flex !important;
+  justify-content: center;
+  align-items: center !important    ;
+  gap: 60px;
+  padding: 0px !important;
+}
+
+.about-page .gem-card-desc {
+  width: 60%;
 }
 
 /* Blog Page Styles */
@@ -2083,3 +2287,48 @@ button:hover,
     display: none;
   }
 }
+
+.join-section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.join-section .glass {
+  position: relative;
+  width: 380px;
+  height: 550px;
+  /* background: linear-gradient(#fff2, transparent); */
+  background-color: #026eda;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 25px 25px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  border-radius: 10px;
+  margin: 0 -45px;
+  backdrop-filter: blur(10px);
+ ;
+}
+
+.join-section:hover .glass {
+  transform: rotate(0deg);
+  margin: 0 10px;
+}
+
+.join-section .glass::before {
+  content: attr(data-text);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.05);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+
