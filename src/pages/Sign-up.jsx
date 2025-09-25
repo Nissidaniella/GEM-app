@@ -12,184 +12,167 @@ const SignUp = () => {
         </p>
 
         <div className="join-section">
-          <div className="form-wrapper">
-            <form className="form volunteer-form">
-              <h2 className="form-title">Volunteer</h2>
-              <div className="form-row">
-                <label>
-                  Name
-                  <input type="text" name="vol_name" required />
-                </label>
-                <label>
-                  Email
-                  <input type="email" name="vol_email" required />
-                </label>
+          <form className="form volunteer-form">
+            <h2 className="form-title">Volunteer</h2>
+            <div className="form-row">
+              <label>
+                Name
+                <input type="text" name="vol_name" required />
+              </label>
+              <label>
+                Email
+                <input type="email" name="vol_email" required />
+              </label>
+            </div>
+            <label>
+              Phone Number
+              <input type="tel" name="vol_phone" required />
+            </label>
+            <label>
+              Address
+              <input type="text" name="vol_address" />
+            </label>
+            <label>
+              Role/Area of interest
+              <select name="vol_position">
+                <option value="education">Education</option>
+                <option value="health">Health</option>
+                <option value="outreach">Outreach</option>
+                <option value="admin">Admin</option>
+                <option value="logistics">Logistics</option>
+                <option value="media">Media</option>
+                <option value="other">Other</option>
+              </select>
+            </label>
+            <label>
+              Do you have previous volunteer experience?
+              <select name="vol_experience">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </select>
+            </label>
+            <label>
+              Please describe any relevant skills or certifications
+              <input type="text" name="vol_skills" />
+            </label>
+            <button type="submit">Submit Application</button>
+          </form>
+
+          <form className="form prayer-partner-form prayer-partner-form-overlap">
+            <h2 className="form-title">Prayer Partner</h2>
+
+            <label>
+              Name
+              <input type="text" name="pp_name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="pp_email" required />
+            </label>
+
+            <label>
+              Phone Number
+              <input type="tel" name="pp_phone" required />
+            </label>
+            <label>
+              Address
+              <input type="text" name="pp_address" />
+            </label>
+            <label>
+              Specific areas you feel led to pray for:
+              <div className="checkbox-row">
+                <div className="checkbox-item checkbox-education">
+                  <label>
+                    <input type="checkbox" name="pp_areas_education" />
+                    <span>Education</span>
+                  </label>
+                </div>
+                <div className="checkbox-item checkbox-health">
+                  <label>
+                    <input type="checkbox" name="pp_areas_health" />
+                    <span>Health</span>
+                  </label>
+                </div>
+                <div className="checkbox-item checkbox-missions">
+                  <label>
+                    <input type="checkbox" name="pp_areas_missions" />
+                    <span>Missions</span>
+                  </label>
+                </div>
+                <div className="checkbox-item checkbox-gemini">
+                  <label>
+                    <input type="checkbox" name="pp_areas_gemini" />
+                    <span>Gemini as a whole</span>
+                  </label>
+                </div>
               </div>
+            </label>
+            <button type="submit">Submit Application</button>
+          </form>
+
+          <form className="form org-team-form">
+            <h2 className="form-title">Organizational Team</h2>
+            <div className="form-row">
+              <label>
+                Name
+                <input type="text" name="org_name" required />
+              </label>
+              <label>
+                Email
+                <input type="email" name="org_email" required />
+              </label>
+            </div>
+            <div className="form-row">
               <label>
                 Phone Number
-                <input type="tel" name="vol_phone" required />
+                <input type="tel" name="org_phone" required />
               </label>
               <label>
                 Address
-                <input type="text" name="vol_address" />
+                <input type="text" name="org_address" required />
               </label>
+            </div>
+
+            <label>
+              Leadership/organizational experience?
+              <input name="org_experience" type="text"></input>
+            </label>
+            <label>
+              Why do you want to join the GEMINI team?
+              <input name="org_interest" type="text"></input>
+            </label>
+            <label>
+              Current Employer/Workplace
+              <input type="text" name="org_employer" />
+            </label>
+
+            <div className="form-row ">
               <label>
                 Role/Area of interest
-                <select name="vol_position">
-                  <option value="education">Education</option>
-                  <option value="health">Health</option>
-                  <option value="outreach">Outreach</option>
-                  <option value="admin">Admin</option>
+                <select name="org_role" className="top">
+                  <option value="project management">Project Management</option>
+                  <option value="communications">Communications</option>
+                  <option value="fundraising">Fundraising</option>
                   <option value="logistics">Logistics</option>
-                  <option value="media">Media</option>
+                  <option value="operations">Operations</option>
+                  <option value="IT">IT</option>
                   <option value="other">Other</option>
                 </select>
               </label>
               <label>
-                Do you have previous volunteer experience?
-                <select name="vol_experience">
-                  <option value="yes">Yes</option>
-                  <option value="no">No</option>
+                Education Level
+                <select name="org_education" className="top">
+                  <option value="high school">High School</option>
+                  <option value="diploma">Diploma</option>
+                  <option value="bachelor’s">Bachelor’s</option>
+                  <option value="master’s">Master’s</option>
+                  <option value="doctorate">Doctorate</option>
+                  <option value="other">Other</option>
                 </select>
               </label>
-              <label>
-                Please describe any relevant skills or certifications
-                <input type="text" name="vol_skills" />
-              </label>
-              <button type="submit">Submit Application</button>
-              <div className="end-note">
-                👉{" "}
-                <a href="#" target="_blank" rel="noopener noreferrer">
-                  Join our Volunteer WhatsApp group to connect with other
-                  volunteers.
-                </a>
-              </div>
-            </form>
-          </div>
-          <div className="form-wrapper">
-            <form className="form prayer-partner-form">
-              <h2 className="form-title">Prayer Partner</h2>
-              <div className="form-row">
-                <label>
-                  Name
-                  <input type="text" name="pp_name" required />
-                </label>
-                <label>
-                  Email
-                  <input type="email" name="pp_email" required />
-                </label>
-              </div>
-              <label>
-                Phone Number
-                <input type="tel" name="pp_phone" required />
-              </label>
-              <label>
-                Address
-                <input type="text" name="pp_address" />
-              </label>
-              <label>
-                Specific areas you feel led to pray for:
-                <div>
-                  <label>
-                    <input type="checkbox" name="pp_areas_education" />{" "}
-                    Education
-                  </label>
-                  <label>
-                    <input type="checkbox" name="pp_areas_health" /> Health
-                  </label>
-                  <label>
-                    <input type="checkbox" name="pp_areas_missions" /> Missions
-                  </label>
-                  <label>
-                    <input type="checkbox" name="pp_areas_gemini" /> GEMINI as a
-                    whole
-                  </label>
-                </div>
-              </label>
-              <button type="submit">Submit Application</button>
-              <div className="end-note">
-                👉{" "}
-                <a href="#" target="_blank" rel="noopener noreferrer">
-                  Join our Prayer Partners WhatsApp group to pray and share with
-                  others.
-                </a>
-              </div>
-            </form>
-          </div>
-          <div className="form-wrapper">
-            <form className="form org-team-form">
-              <h2 className="form-title">Organizational Team</h2>
-              <div className="form-row">
-                <label>
-                  Name
-                  <input type="text" name="org_name" required />
-                </label>
-                <label>
-                  Email
-                  <input type="email" name="org_email" required />
-                </label>
-              </div>
-              <div className="form-row">
-                <label>
-                  Phone Number
-                  <input type="tel" name="org_phone" required />
-                </label>
-                <label>
-                  Address
-                  <input type="text" name="org_address" required />
-                </label>
-              </div>
-
-              <label>
-                Relevant leadership/organizational experience
-                <input name="org_experience" type="text"></input>
-              </label>
-              <label>
-                Why do you want to join the GEMINI team?
-                <input name="org_interest" type="text"></input>
-              </label>
-              <label>
-                Current Employer/Workplace
-                <input type="text" name="org_employer" />
-              </label>
-
-              <div className="form-row ">
-                <label>
-                  Role/Area of interest
-                  <select name="org_role">
-                    <option value="project management">
-                      Project Management
-                    </option>
-                    <option value="communications">Communications</option>
-                    <option value="fundraising">Fundraising</option>
-                    <option value="logistics">Logistics</option>
-                    <option value="operations">Operations</option>
-                    <option value="IT">IT</option>
-                    <option value="other">Other</option>
-                  </select>
-                </label>
-                <label>
-                  
-                  Highest Level of Education
-                  <select name="org_education">
-                    <option value="high school">High School</option>
-                    <option value="diploma">Diploma</option>
-                    <option value="bachelor’s">Bachelor’s</option>
-                    <option value="master’s">Master’s</option>
-                    <option value="doctorate">Doctorate</option>
-                    <option value="other">Other</option>
-                  </select>
-                </label>
-              </div>
-              <button type="submit">Submit Application</button>
-              <div className="end-note">
-                👉{" "}
-                <a href="#" target="_blank" rel="noopener noreferrer">
-                  Join our Organizational Team WhatsApp group to stay connected.
-                </a>
-              </div>
-            </form>
-          </div>
+            </div>
+            <button type="submit">Submit Application</button>
+          </form>
         </div>
 
         {/* 
@@ -207,30 +190,30 @@ const SignUp = () => {
           <h2>Frequently Asked Questions</h2>
           <div className="faq-container">
             <div className="faq-item">
-              <h3>How quickly will I receive a response?</h3>
+              <h3>Can I apply for more than one position?</h3>
+              <p>Yes, you can indicate interest in more than one role.</p>
+            </div>
+            <div className="faq-item">
+              <h3>Do I need specific qualifications?</h3>
               <p>
-                We aim to respond to all inquiries within 24-48 business hours.
+                Organizational Team members may need leadership experience.
+                Volunteers and Prayer Partners only need dedication and
+                commitment.
               </p>
             </div>
             <div className="faq-item">
-              <h3>Can I visit your office in person?</h3>
+              <h3>What is expected from me?</h3>
               <p>
-                Yes, we welcome visitors during our office hours. We recommend
-                scheduling an appointment in advance.
+                Organizational Team members guide and plan, Volunteers support
+                activities, and Prayer Partners commit to praying for GEMINI’s
+                mission.
               </p>
             </div>
             <div className="faq-item">
-              <h3>How can I report a technical issue?</h3>
+              <h3>How do I know if my application was received?</h3>
               <p>
-                Please email support@fundor.org with details of the issue,
-                including screenshots if possible.
-              </p>
-            </div>
-            <div className="faq-item">
-              <h3>Do you offer partnership opportunities?</h3>
-              <p>
-                Yes! Please reach out to partnerships@fundor.org to discuss
-                potential collaboration.
+                After submitting the form, you’ll receive a confirmation email
+                with details on the next steps.
               </p>
             </div>
           </div>
@@ -242,6 +225,9 @@ const SignUp = () => {
 
 export default SignUp;
 
+{
+  /* Join Section */
+}
 {
   /* Join Section */
 }
