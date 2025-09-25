@@ -7,8 +7,8 @@ const SignUp = () => {
       <div className="page-content">
         <h1 className="page-title"> Sign up</h1>
         <p className="page-description">
-          Have questions or need assistance? Reach out to our team and we'll be
-          happy to help.
+          Fill out one or more forms to officially become a GEM — as a
+          Volunteer, Prayer Partner, or Organizational Team member.
         </p>
 
         <div className="join-section">

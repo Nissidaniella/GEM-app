@@ -2396,7 +2396,8 @@ button:hover,
 .org-team-form select:focus,
 .volunteer-form textarea:focus,
 .prayer-partner-form textarea:focus,
-.org-team-form textarea:focus {
+.org-team-form textarea:focu
+s {
   border-color: #da0202;
   outline: none;
 }
@@ -2458,3 +2459,6 @@ button:hover,
  
   opacity: 0.98;
 }
+
+
+
