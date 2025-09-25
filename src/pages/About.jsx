@@ -252,98 +252,46 @@ const About = ({ handleNavigate }) => {
         <br></br>
         <br></br>
 
- <h1 className="page-description">
-          Have questions or need assistance? Reach out to our team and we'll be
-          happy to help.
-        </h1>
+           <div className="contact-section">
+      {/* Left Side - Form */}
+      <div className="contact-form">
+        <h2>Contact Us</h2>
+        <p>Feel free to contact us any time. We will get back to you as soon as we can!</p>
+        
+        <form>
+          <label>
+            <input type="text" name="name" required  placeholder="Name"/>
+          </label>
 
-  <div className="contact-container">
-          <div className="contact-info">
-            <div className="info-item">
-              <div className="info-icon">
-                <i className="fas fa-map-marker-alt"></i>
-              </div>
-              <div className="info-content">
-                <h3>Our Location</h3>
-                <p>123 Charity Lane</p>
-                <p>Suite 456</p>
-                <p>New York, NY 10001</p>
-              </div>
-            </div>
+          <label>
+            <input type="email" name="email" required  placeholder="Email"/>
+          </label>
+          <label>
+            <input name="message" rows="4" required placeholder="Message"></input>
+          </label>
+          <button type="submit">SEND</button>
+        </form>
+      </div>
 
-            <div className="info-item">
-              <div className="info-icon">
-                <i className="fas fa-phone-alt"></i>
-              </div>
-              <div className="info-content">
-                <h3>Phone</h3>
-                <p>+(84) 1800 333 555</p>
-                <p>Mon - Fri: 9:00 AM - 6:00 PM</p>
-              </div>
-            </div>
-
-            <div className="info-item">
-              <div className="info-icon">
-                <i className="fas fa-envelope"></i>
-              </div>
-              <div className="info-content">
-                <h3>Email</h3>
-                <p>info@fundor.org</p>
-                <p>support@fundor.org</p>
-              </div>
-            </div>
-
-            <div className="info-item">
-              <div className="info-icon">
-                <i className="fas fa-clock"></i>
-              </div>
-              <div className="info-content">
-                <h3>Office Hours</h3>
-                <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
-                <p>Saturday: 10:00 AM - 2:00 PM</p>
-                <p>Sunday: Closed</p>
-              </div>
-            </div>
-          </div>
-
-          <div className="contact-form-container">
-            <h2>Send Us a Message</h2>
-            <form className="contact-form">
-              <div className="form-row">
-                <div className="form-group">
-                  <label htmlFor="name">Your Name</label>
-                  <input type="text" id="name" placeholder="Enter your name" />
-                </div>
-                <div className="form-group">
-                  <label htmlFor="email">Your Email</label>
-                  <input
-                    type="email"
-                    id="email"
-                    placeholder="Enter your email"
-                  />
-                </div>
-              </div>
-
-              <div className="form-group">
-                <label htmlFor="subject">Subject</label>
-                <input type="text" id="subject" placeholder="Enter subject" />
-              </div>
-
-              <div className="form-group">
-                <label htmlFor="message">Message</label>
-                <textarea
-                  id="message"
-                  rows="6"
-                  placeholder="Type your message here..."
-                ></textarea>
-              </div>
-
-              <button type="submit" className="submit-btn">
-                Send Message
-              </button>
-            </form>
-          </div>
-        </div>
+      {/* Right Side - Info */}
+      <div className="contact-info">
+        <h3>Info</h3>
+        <ul>
+          <li>
+            <span className="icon">✉️</span> info@getintouch.we
+          </li>
+          <li>
+            <span className="icon">📞</span> +24 56 89 146
+          </li>
+          <li>
+            <span className="icon">🏢</span> 14 Greenroad St.
+          </li>
+          <li>
+            <span className="icon">⏰</span> 09:00 - 18:00
+          </li>
+        </ul>
+      </div>
+    </div>
 
          <div className="faq-section">
           <h2>Frequently Asked Questions</h2>
