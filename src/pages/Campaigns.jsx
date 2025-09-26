@@ -9,7 +9,6 @@ import campaignPrayer from "../images/campaign-prayer.png";
 import campaignVolunteer from "../images/campaign-volunteer.png";
 import campaignDonate from "../images/campaign-donate.png";
 
-
 const campaignData = [
   {
     title: "Bright Futures Scholarship Drive",
@@ -187,21 +186,30 @@ const Campaigns = ({ handleNavigate }) => {
               <button
                 className="campaign-modal-action"
                 style={{ outline: "none" }}
-                onClick={() => handleNavigate("contact")}
+                onClick={() => {
+                  setModalIdx(null);
+                  handleNavigate("contact", { formType: "donate" });
+                }}
               >
                 Donate
               </button>
               <button
                 className="campaign-modal-action"
                 style={{ outline: "none" }}
-                onClick={() => handleNavigate("contact")}
+                onClick={() => {
+                  setModalIdx(null);
+                  handleNavigate("contact", { formType: "volunteer" });
+                }}
               >
                 Volunteer
               </button>
               <button
                 className="campaign-modal-action"
                 style={{ outline: "none" }}
-                onClick={() => handleNavigate("contact")}
+                onClick={() => {
+                  setModalIdx(null);
+                  handleNavigate("contact", { formType: "prayer" });
+                }}
               >
                 Pray
               </button>
@@ -216,8 +224,6 @@ const Campaigns = ({ handleNavigate }) => {
           </div>
         </div>
       )}
-
-      
     </div>
   );
 };

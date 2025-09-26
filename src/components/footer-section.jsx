@@ -23,7 +23,7 @@ export default function FooterSection({ onNavigate }) {
         <div className="footer-col">
           <div className="footer-title">CONTACT US</div>
           <div className="footer-contact">
-            123 Anywhere St.
+            13 Anywhere St.
             <br />
             Cityname, NY 11205
             <br />

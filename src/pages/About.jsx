@@ -179,6 +179,7 @@ const About = ({ handleNavigate }) => {
               left: "0px",
               textAlign: "center",
               fontSize: "3.5rem",
+              fontFamily: '"Montserrat", system-ui, sans-serif', fontWeight: 500 
             }}
           >
             Our Founder
@@ -210,7 +211,7 @@ const About = ({ handleNavigate }) => {
 
             
             <div className="about-text" style={{ position: "relative" }}>
-              <h1 style={{ marginTop: "15px",}}>Rev. Dr. Earl Godman</h1>{" "}
+              <h1 style={{ marginTop: "15px",fontFamily: '"Montserrat", system-ui, sans-serif', fontWeight: 600 }}>Rev. Dr. Earl Godman</h1>{" "}
               <br></br>
               <br></br>
               <img
@@ -241,7 +242,7 @@ const About = ({ handleNavigate }) => {
                   transform: "rotate(12deg)",
                 }}
               />
-              <div style={{ position: "relative", zIndex: 2 }}>
+              <div style={{ position: "relative", zIndex: 2,fontFamily: '"Montserrat", system-ui, sans-serif', fontWeight: 100  }}>
                 <p>
                   Fundor was established in 2020 with a vision to democratize
                   fundraising and make it accessible to everyone. Our founders

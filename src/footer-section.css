@@ -1,4 +1,4 @@
-.donation-footer {
+/* .donation-footer {
   background: rgb(3, 6, 23);
   color: rgb(245, 178, 0);
   padding: 48px 0 32px 0;
@@ -33,6 +33,7 @@
   font-size: 0.98rem;
   color: #f5f7f9;
   margin-bottom: 8px;
+ 
 }
 .footer-links a {
   color: #f9fbfe;
@@ -107,4 +108,4 @@
 .social-button:hover::before {
   width: 0px;
   height: 0px;
-}
+} */

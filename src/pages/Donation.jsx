@@ -6,7 +6,7 @@ const Donation = ({ handleNavigate }) => {
   return (
     <div
       className="donation-page"
-      style={{ position: "relative", minHeight: "100vh" }}
+      style={{ position: "relative", minHeight: "100vh",  fontFamily: "Montserrat, system-ui, sans-serif"  }}
     >
       {/* Hero Banner and Form Side-by-Side */}
       <div
@@ -96,6 +96,7 @@ const Donation = ({ handleNavigate }) => {
                   fontSize: window.innerWidth <= 962 ? "1rem" : "1.1rem",
                   lineHeight: "1.5",
                   marginBottom: "0",
+                  fontWeight: 100,
                 }}
               >
                 Select one of the donation options to get started with your
@@ -114,7 +115,7 @@ const Donation = ({ handleNavigate }) => {
             >
               <h2
                 className="form-section-title"
-                style={{ margin: "0 0 12px 0" }}
+                style={{ margin: "0 0 12px 0",  fontWeight: "500", fontFamily: "Montserrat, system-ui, sans-serif"  }}
               >
                 Monthly Donation - Your Information
               </h2>
@@ -125,7 +126,7 @@ const Donation = ({ handleNavigate }) => {
                     type="text"
                     id="monthlyFirstName"
                     name="firstName"
-                    placeholder="First name"
+                   
                   />
                 </div>
                 <div className="form-group">
@@ -134,7 +135,7 @@ const Donation = ({ handleNavigate }) => {
                     type="text"
                     id="monthlyLastName"
                     name="lastName"
-                    placeholder="Last name"
+                    
                   />
                 </div>
               </div>
@@ -144,7 +145,7 @@ const Donation = ({ handleNavigate }) => {
                   type="email"
                   id="monthlyEmail"
                   name="email"
-                  placeholder="Email address"
+                 
                 />
               </div>
               <div className="form-group" style={{ marginBottom: "10px" }}>
@@ -165,7 +166,7 @@ const Donation = ({ handleNavigate }) => {
 
               <h2
                 className="form-section-title"
-                style={{ margin: "18px 0 12px 0" }}
+                style={{ margin: "18px 0 12px 0", fontWeight: "500", fontFamily: "Montserrat, system-ui, sans-serif" }}
               >
                 Payment Information
               </h2>
@@ -175,7 +176,7 @@ const Donation = ({ handleNavigate }) => {
                   type="text"
                   id="monthlyCardNumber"
                   name="cardNumber"
-                  placeholder="Credit card number"
+                 
                 />
               </div>
               <div className="form-row" style={{ marginBottom: "10px" }}>
@@ -210,7 +211,7 @@ const Donation = ({ handleNavigate }) => {
                 </div>
               </div>
 
-              <p className="donation-message" style={{ margin: "10px 0" }}>
+              <p className="donation-message" style={{ margin: "10px 0", fontWeight: "100", fontFamily: "Montserrat, system-ui, sans-serif" }}>
                 You will be charged monthly until you choose to cancel.
               </p>
 
@@ -235,7 +236,7 @@ const Donation = ({ handleNavigate }) => {
             >
               <h2
                 className="form-section-title"
-                style={{ margin: "0 0 12px 0" }}
+                style={{ margin: "0 0 12px 0",  fontWeight: "500", fontFamily: "Montserrat, system-ui, sans-serif"  }}
               >
                 Mobile Money Payment
               </h2>
@@ -245,7 +246,7 @@ const Donation = ({ handleNavigate }) => {
                   type="text"
                   id="mobileFirstName"
                   name="firstName"
-                  placeholder="First name"
+                  
                 />
               </div>
               <div className="form-group" style={{ marginBottom: "10px" }}>
@@ -254,7 +255,7 @@ const Donation = ({ handleNavigate }) => {
                   type="text"
                   id="mobileLastName"
                   name="lastName"
-                  placeholder="Last name"
+                 
                 />
               </div>
               <div className="form-group" style={{ marginBottom: "10px" }}>
@@ -265,7 +266,7 @@ const Donation = ({ handleNavigate }) => {
                   defaultValue=""
                   className="form-select"
                 >
-                  <option value="">Select Provider</option>
+                 
                   <option value="mtn">MTN Mobile Money</option>
                   <option value="airtel">Airtel Money</option>
                   <option value="vodafone">Vodafone Cash</option>
@@ -278,7 +279,7 @@ const Donation = ({ handleNavigate }) => {
                   type="tel"
                   id="mobileNumber"
                   name="mobileNumber"
-                  placeholder="Enter mobile number"
+                 
                 />
               </div>
               <div className="form-group" style={{ marginBottom: "10px" }}>
@@ -286,18 +287,21 @@ const Donation = ({ handleNavigate }) => {
                 <select
                   id="mobileAmount"
                   name="amount"
-                  defaultValue="10"
+                  defaultValue="50"
                   className="form-select"
                 >
-                  <option value="5">¢5</option>
-                  <option value="10">¢10</option>
+    
                   <option value="25">¢25</option>
                   <option value="50">¢50</option>
                   <option value="100">¢100</option>
+                  <option value="250">¢250</option>
+                  <option value="500">¢500</option>
+                  <option value="1000">¢1000</option>
+                  <option value="5000">¢5000</option>
                 </select>
               </div>
 
-              <p className="donation-message" style={{ margin: "10px 0" }}>
+              <p className="donation-message" style={{ margin: "10px 0", fontWeight: "100", fontFamily: "Montserrat, system-ui, sans-serif" }}>
                 You will receive an SMS prompt to confirm the payment on your
                 mobile device.
               </p>
@@ -323,7 +327,7 @@ const Donation = ({ handleNavigate }) => {
             >
               <h2
                 className="form-section-title"
-                style={{ margin: "0 0 12px 0" }}
+                style={{ margin: "0 0 12px 0",  fontWeight: "500", fontFamily: "Montserrat, system-ui, sans-serif"  }}
               >
                 One-Time Donation - Your Information
               </h2>
@@ -334,7 +338,7 @@ const Donation = ({ handleNavigate }) => {
                     type="text"
                     id="firstName"
                     name="firstName"
-                    placeholder="First name"
+                    
                   />
                 </div>
                 <div className="form-group">
@@ -343,7 +347,7 @@ const Donation = ({ handleNavigate }) => {
                     type="text"
                     id="lastName"
                     name="lastName"
-                    placeholder="Last name"
+                   
                   />
                 </div>
               </div>
@@ -353,7 +357,7 @@ const Donation = ({ handleNavigate }) => {
                   type="text"
                   id="streetAddress"
                   name="streetAddress"
-                  placeholder="Street address"
+                 
                 />
               </div>
               <div className="form-row" style={{ marginBottom: "10px" }}>
@@ -403,13 +407,13 @@ const Donation = ({ handleNavigate }) => {
                   type="email"
                   id="email"
                   name="email"
-                  placeholder="Email address"
+                  
                 />
               </div>
 
               <h2
                 className="form-section-title"
-                style={{ margin: "18px 0 12px 0" }}
+                style={{ margin: "18px 0 12px 0", fontWeight: "500", fontFamily: "Montserrat, system-ui, sans-serif" }}
               >
                 Payment Information
               </h2>
@@ -419,7 +423,7 @@ const Donation = ({ handleNavigate }) => {
                   type="text"
                   id="cardNumber"
                   name="cardNumber"
-                  placeholder="Credit card number"
+                
                 />
               </div>
               <div className="form-row" style={{ marginBottom: "10px" }}>
@@ -454,7 +458,7 @@ const Donation = ({ handleNavigate }) => {
                 </div>
               </div>
 
-              <p className="donation-message" style={{ margin: "10px 0" }}>
+              <p className="donation-message" style={{ margin: "10px 0", fontWeight: "100", fontFamily: "Montserrat, system-ui, sans-serif" }}>
                 Click the button to confirm your one-time donation.
               </p>
 
@@ -488,6 +492,7 @@ const Donation = ({ handleNavigate }) => {
             whiteSpace: "pre-line",
             marginBottom: window.innerWidth <= 962 ? "20px" : "0",
             order: window.innerWidth <= 962 ? 1 : "initial",
+             
           }}
         >
           BE A GEM IN
@@ -564,6 +569,7 @@ const Donation = ({ handleNavigate }) => {
               border: "2px solid rgba(255, 255, 255, 0.3)",
               cursor: "pointer",
               minWidth: window.innerWidth <= 962 ? "140px" : "auto",
+                fontFamily: "Montserrat, system-ui, sans-serif" 
             }}
             onMouseOver={(e) => {
               e.target.style.backgroundColor = "rgba(255, 255, 255, 0.2)";
