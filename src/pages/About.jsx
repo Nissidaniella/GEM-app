@@ -72,86 +72,103 @@ const About = ({ handleNavigate }) => {
                 style={{ backgroundImage: "url('/src/images/heart.jpg')" }}
               ></div>
             </div>
-            <div className="mosaic-tile tile-img tile-person6">
-              <div
-                className="mosaic-photo"
-                style={{ backgroundImage: "url('/src/images/kids.jpg')" }}
-              ></div>
-            </div>
+          
           </div>
         </div>
 
 
-         <section className="gem-section">
-          <div className="gem-inner">
-            <div
-              className="gem-cards about-page"
-              style={{ justifyContent: "center", display: "flex" }}
-            >
-              <div className="gem-card">
-                <div className="card1">
-<div className="gem-card-icon gem-card-icon-yellow">
-                  <MissionIcon />
-                </div>
-                <div className="gem-card-title">Our Mission</div>
-
-                </div>
-                
-                <div className="gem-card-desc">
-                  Empower individuals and communities to reach their full
-                  potential through education, support, and opportunity.  Empower individuals and communities to reach their full
-                  potential through education, support, and opportunity.
-                  <br></br>
-                  <br></br>
-                   Empower individuals and communities to reach their full
-                  potential through education, support, and opportunity.
-                   Empower individuals and communities to reach their full
-                  potential through education, support, and opportunity.
-
-                  
-                </div>
-              </div>
-              <div className="gem-card gem-card-active">
-                <div className="card1">
-
-                     <div className="gem-card-icon gem-card-icon-yellow">
-                  <VisionIcon />
-                </div>
-                <div className="gem-card-title">Our Vision</div>
-                </div>
-            
-                <div className="gem-card-desc">
-                  A world where everyone has access to the resources, care, and
-                  encouragement they need to thrive.
-                </div>
-              </div>
-
-
-              <div className="gem-card">
-
-                <div className="card1">
-<div className="gem-card-icon gem-card-icon-yellow">
-                  <ValuesIcon />
-                </div>
-                <div className="gem-card-title">Our Values</div>
-
-                </div>
-                
-
-
-
-
-                <div className="gem-card-desc">
-                  Compassion, integrity, and unity guide every action as we work
-                  together for lasting impact.
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+       
+<br></br> <br></br>
+       
+   
+    <section className="vision-section">
+      <div className="vision-inner">
 
        
+        <div className="heading-wrap">
+          <div className="edit-handles">
+            <span className="h top-left" />
+            <span className="h top-center" />
+            <span className="h top-right" />
+            <span className="h mid-left" />
+            <span className="h mid-right" />
+            <span className="h bottom-left" />
+            <span className="h bottom-center" />
+            <span className="h bottom-right" />
+          </div>
 
+          <h1 className="vision-heading">
+            Our <span className="yellow">V</span>ision
+            <img src="patch2.png" alt="" className="underline-img" />
+          </h1>
+        </div>
+
+        <p className="vision-body">
+          Our vision is to become a top design agency, empowering brands across
+          all industries by crafting unique, impactful visuals that build
+          lasting connection and meaning.
+        </p>
+        </div>
+       
+          <div className="mission-inner">
+
+  <div className="heading-wrap">
+          <div className="edit-handles">
+            <span className="h top-left" />
+            <span className="h top-center" />
+            <span className="h top-right" />
+            <span className="h mid-left" />
+            <span className="h mid-right" />
+            <span className="h bottom-left" />
+            <span className="h bottom-center" />
+            <span className="h bottom-right" />
+          </div>
+            
+            <h1 className="mission-heading">
+              Our <span className="yellow">M</span>ission
+              <img src="patch2.PNG" alt="" className="underline-img" />
+            </h1>
+
+          </div>
+            <p className="mission-body">
+              Our mission is to deliver innovative, creative, and effective
+              design solutions that elevate brands, inspire audiences, and
+              create lasting impressions.
+            </p>
+          </div>
+
+          <div className="values-inner">
+
+  <div className="heading-wrap">
+          <div className="edit-handles">
+            <span className="h top-left" />
+            <span className="h top-center" />
+            <span className="h top-right" />
+            <span className="h mid-left" />
+            <span className="h mid-right" />
+            <span className="h bottom-left" />
+            <span className="h bottom-center" />
+            <span className="h bottom-right" />
+          </div>
+            
+            <h1 className="values-heading">
+              Our <span className="yellow">V</span>alues
+              <img src="patch2.PNG" alt="" className="underline-img" />
+            </h1>
+
+          </div>
+            <p className="values-body">
+              Our mission is to deliver innovative, creative, and effective
+              design solutions that elevate brands, inspire audiences, and
+              create lasting impressions.
+            </p>
+          </div>
+    
+
+     
+    </section>
+  
+ 
       
 
         <div className="content-section">
@@ -249,8 +266,7 @@ const About = ({ handleNavigate }) => {
         </div>
 
  <br></br>
-        <br></br>
-        <br></br>
+      
 
            <div className="contact-section">
       {/* Left Side - Form */}
@@ -273,58 +289,45 @@ const About = ({ handleNavigate }) => {
         </form>
       </div>
 
-      {/* Right Side - Info */}
-      <div className="contact-info">
-        <h3>Info</h3>
+      {/* Right Side - faq */}
+      <div className="contact-faq">
+        <h3>Frequently Asked 
+        Questions
+        </h3>
         <ul>
           <li>
-            <span className="icon">✉️</span> info@getintouch.we
+            <span className="question"> <h5> • How quickly will I receive a response?</h5></span> 
+         
+            <span className="answer">
+               <p>
+                We aim to respond to all inquiries within 24-48 business hours.
+              </p>
+            </span>
+          </li>
+         <li>
+            <span className="question"> <h5> • How quickly will I receive a response?</h5></span> 
+         
+            <span className="answer">
+               <p>
+                We aim to respond to all inquiries within 24-48 business hours.
+              </p>
+            </span>
           </li>
           <li>
-            <span className="icon">📞</span> +24 56 89 146
+            <span className="question"> <h5> • How quickly will I receive a response?</h5></span> 
+         
+            <span className="answer">
+               <p>
+                We aim to respond to all inquiries within 24-48 business hours.
+              </p>
+            </span>
           </li>
-          <li>
-            <span className="icon">🏢</span> 14 Greenroad St.
-          </li>
-          <li>
-            <span className="icon">⏰</span> 09:00 - 18:00
-          </li>
+        
         </ul>
       </div>
     </div>
 
-         <div className="faq-section">
-          <h2>Frequently Asked Questions</h2>
-          <div className="faq-container">
-            <div className="faq-item">
-              <h3>How quickly will I receive a response?</h3>
-              <p>
-                We aim to respond to all inquiries within 24-48 business hours.
-              </p>
-            </div>
-            <div className="faq-item">
-              <h3>Can I visit your office in person?</h3>
-              <p>
-                Yes, we welcome visitors during our office hours. We recommend
-                scheduling an appointment in advance.
-              </p>
-            </div>
-            <div className="faq-item">
-              <h3>How can I report a technical issue?</h3>
-              <p>
-                Please email support@fundor.org with details of the issue,
-                including screenshots if possible.
-              </p>
-            </div>
-            <div className="faq-item">
-              <h3>Do you offer partnership opportunities?</h3>
-              <p>
-                Yes! Please reach out to partnerships@fundor.org to discuss
-                potential collaboration.
-              </p>
-            </div>
-          </div>
-        </div>
+     
        
 
       </div>
