@@ -326,9 +326,18 @@
   .hero-desc {
     font-size: 1.1rem;
   }
+
+  .hero-container.is-home {
+    height: 70vh;
+  }
 }
 
 @media (max-width: 769px) {
+
+   .hero-container.is-home {
+    height: 50vh;
+  }
+
   .navbar {
     padding: 15px 20px;
     flex-wrap: wrap; /* Allow items to wrap if needed */
@@ -477,5 +486,9 @@
   .donate-btn {
     width: 100%; /* Make donate button full width */
     margin-top: 15px;
+  }
+
+   .hero-container.is-home {
+    height: 40vh;
   }
 }

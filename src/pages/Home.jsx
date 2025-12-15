@@ -196,8 +196,9 @@ const Home = (props) => {
               <h2 className="gem-title">
                 Your Role
                 <br />
-                Matters.
+                 Matters.
               </h2>
+             
             </div>
             <p className="gem-desc">
               Support the Gemini mission—volunteer, become a prayer partner, or
